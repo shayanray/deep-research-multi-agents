@@ -1,0 +1,174 @@
+{
+  "title": "Research Report: What are the real-world risks and benefits of using synthetic data to train or fine-tune large language models? Focus on data quality, bias, and evaluation.",
+  "topic": "What are the real-world risks and benefits of using synthetic data to train or fine-tune large language models? Focus on data quality, bias, and evaluation.",
+  "executive_summary": "The use of synthetic data to train and fine-tune large language models has both benefits and risks. On the one hand, synthetic data can be used to adapt models to perform specific tasks and can be generated at scale. However, ensuring the factuality, fidelity, and lack of bias in synthetic data remains a challenge. The diversity of sources of synthetic data can also impact the behavior of fine-tuned models, and standardized evaluation and contamination protocols are needed to ensure data quality. Furthermore, synthetic data may not accurately represent the diversity of the real-world population, potentially producing bias in models. On the other hand, fine-tuning large language models with synthetic data can potentially transform numerous professional fields, and evidence-based practice can help eliminate unsound or outdated practices in favor of more-effective ones. Overall, the use of synthetic data in language model development requires careful consideration of its potential risks and benefits.",
+  "sections": [],
+  "key_findings": [
+    "Synthetic data can be used to train and evaluate AI models at scale, but ensuring factuality, fidelity, and lack of bias remains a challenge.",
+    "Fine-tuning large language models with synthetic data can adapt the model to perform a more specific task.",
+    "Large language models can be fine-tuned to generate text, speech, and images in response to user prompts.",
+    "Directly fine-tuning on value-aligned or human-preferred data is a straightforward method for aligning language models, but it often requires substantial human annotation.",
+    "Synthetic data may not accurately represent the diversity of the real-world population, potentially producing bias in models.",
+    "Standardized evaluation and contamination protocols and tools are needed to ensure the quality of synthetic data.",
+    "Improving the fidelity and controllability of generative models is a critical research direction for synthetic data.",
+    "The diversity of sources of synthetic data can impact the behavior of fine-tuned large language models.",
+    "In-Context Evaluation (ICE) is an alternative automatic approach for assessing data quality in synthetic data for language models.",
+    "Evidence-based practice (EBP) aims to eliminate unsound or outdated practices in favor of more-effective ones by shifting the basis for decision making from tradition, intuition, and unsystematic experience to firmly grounded scientific research."
+  ],
+  "conflicts_identified": [],
+  "methodology": "",
+  "limitations": "",
+  "sources": [
+    {
+      "id": "a23734b9",
+      "url": "https://arxiv.org/html/2404.07503v1",
+      "title": "Best Practices and Lessons Learned on Synthetic Data for Language Models",
+      "content": "February 27, 2026 - By generating realistic and diverse datasets, synthetic data enables the training and evaluation of AI models at scale across various domains. As we approach human-level or even superhuman-level intelligence, obtaining synthetic data becomes even more crucial, given that models need better-than-average-human quality data to progress. However, ensuring the factuality, fidelity, and lack of bias in synthetic data remains a critical challenge. Future research directions on synthetic data could focus on improving the fidelity and controllability of generative models and developing standardized evaluation and contamination protocols and tools.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T08:06:48.837609",
+      "metadata": {}
+    },
+    {
+      "id": "99fff90c",
+      "url": "https://www.ibm.com/think/insights/ai-synthetic-data",
+      "title": "Examining synthetic data: The promise, risks and realities | IBM",
+      "content": "November 18, 2025 - De Padua warns of the “risk of the synthetic data not accurately representing the diversity of the real-world population, producing potential bias in models that fail to perform equitably across different demographic groups.”",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T08:06:48.837657",
+      "metadata": {}
+    },
+    {
+      "id": "b57f41f9",
+      "url": "http://arxiv.org/abs/1907.02664v2",
+      "title": "Data Encoding for Byzantine-Resilient Distributed Optimization",
+      "content": "We study distributed optimization in the presence of Byzantine adversaries, where both data and computation are distributed among $m$ worker machines, $t$ of which may be corrupt. The compromised nodes may collaboratively and arbitrarily deviate from their pre-specified programs, and a designated (master) node iteratively computes the model/parameter vector for generalized linear models. In this work, we primarily focus on two iterative algorithms: Proximal Gradient Descent (PGD) and Coordinate Descent (CD). Gradient descent (GD) is a special case of these algorithms. PGD is typically used in the data-parallel setting, where data is partitioned across different samples, whereas, CD is used in the model-parallelism setting, where data is partitioned across the parameter space.\n  In this paper, we propose a method based on data encoding and error correction over real numbers to combat adversarial attacks. We can tolerate up to $t\\leq \\lfloor\\frac{m-1}{2}\\rfloor$ corrupt worker nodes, which is information-theoretically optimal. We give deterministic guarantees, and our method does not assume any probability distribution on the data. We develop a {\\em sparse} encoding scheme which enables computationally efficient data encoding and decoding. We demonstrate a trade-off between the corruption threshold and the resource requirements (storage, computational, and communication complexity). As an example, for $t\\leq\\frac{m}{3}$, our scheme incurs only a {\\em constant} overhead on these…",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T08:06:57.938905",
+      "metadata": {
+        "authors": [
+          "Deepesh Data",
+          "Linqi Song",
+          "Suhas Diggavi"
+        ],
+        "published": "2019-07-05",
+        "categories": [
+          "cs.DC",
+          "cs.CR",
+          "cs.LG"
+        ]
+      }
+    },
+    {
+      "id": "299c411c",
+      "url": "http://arxiv.org/abs/2005.07866v1",
+      "title": "Byzantine-Resilient SGD in High Dimensions on Heterogeneous Data",
+      "content": "We study distributed stochastic gradient descent (SGD) in the master-worker architecture under Byzantine attacks. We consider the heterogeneous data model, where different workers may have different local datasets, and we do not make any probabilistic assumptions on data generation. At the core of our algorithm, we use the polynomial-time outlier-filtering procedure for robust mean estimation proposed by Steinhardt et al. (ITCS 2018) to filter-out corrupt gradients. In order to be able to apply their filtering procedure in our {\\em heterogeneous} data setting where workers compute {\\em stochastic} gradients, we derive a new matrix concentration result, which may be of independent interest.\n  We provide convergence analyses for smooth strongly-convex and non-convex objectives. We derive our results under the bounded variance assumption on local stochastic gradients and a {\\em deterministic} condition on datasets, namely, gradient dissimilarity; and for both these quantities, we provide concrete bounds in the statistical heterogeneous data model. We give a trade-off between the mini-batch size for stochastic gradients and the approximation error. Our algorithm can tolerate up to $\\frac{1}{4}$ fraction Byzantine workers. It can find approximate optimal parameters in the strongly-convex setting exponentially fast and reach to an approximate stationary point in the non-convex setting with a linear speed, thus, matching the convergence rates of vanilla SGD in the Byzantine-free set…",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T08:06:57.939058",
+      "metadata": {
+        "authors": [
+          "Deepesh Data",
+          "Suhas Diggavi"
+        ],
+        "published": "2020-05-16",
+        "categories": [
+          "stat.ML",
+          "cs.CR",
+          "cs.DC",
+          "cs.LG"
+        ]
+      }
+    },
+    {
+      "id": "b3bae192",
+      "url": "https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)",
+      "title": "Fine-tuning (deep learning) - Wikipedia",
+      "content": "Fine-tuning is the process of adapting a model trained for one task to perform a different, usually more specific, task. It is considered a form of transfer learning, as it reuses knowledge learned from the original training objective.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T08:08:39.513088",
+      "metadata": {}
+    },
+    {
+      "id": "7fb13f7a",
+      "url": "https://arxiv.org/html/2511.01490v2",
+      "title": "Synthetic Eggs in Many Baskets: The Impact of Synthetic Data...",
+      "content": "As synthetic data becomes widely used in language model development, understanding its impact on model behavior is crucial. This paper investigates the impact of the diversity of sources of synthetic data on fine-tuned large language models.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T08:08:39.513129",
+      "metadata": {}
+    },
+    {
+      "id": "205da2ac",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "title": "ChatGPT",
+      "content": "ChatGPT is a generative artificial intelligence chatbot developed by OpenAI. It was released in November 2022. It uses large language models—specifically generative pre-trained transformers (GPTs)—to generate text, speech, and images in response to user prompts. It is credited with accelerating the AI boom, an ongoing period marked by rapid investment and public attention toward the field of artificial intelligence (AI). OpenAI operates the service on a freemium model. Users can interact with ChatGPT through text, audio, and image prompts.\nChatGPT was quickly adopted, reaching 100 million monthly active users two months after its release and 900 million weekly active users in February 2026. It has been lauded for its potential to transform numerous professional fields, and has instigated public debate about the nature of creativity and the future of knowledge work.\nThe chatbot has also been criticized for its limitations and potential for unethical use. It can generate plausible-sounding but incorrect or nonsensical answers, known as hallucinations. Biases in its training data have been reflected in its responses. The chatbot can facilitate academic dishonesty, generate misinformation, and create malicious code. The ethics of its development, particularly the use of copyrighted content as training data, have also drawn controversy.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T08:08:43.285520",
+      "metadata": {
+        "categories": [
+          "2022 in artificial intelligence",
+          "2022 software",
+          "All Wikipedia articles written in American English",
+          "All articles lacking reliable references",
+          "Articles lacking reliable references from April 2026"
+        ]
+      }
+    },
+    {
+      "id": "3a8c8e2a",
+      "url": "https://arxiv.org/html/2409.16341v2",
+      "title": "Quality Matters: Evaluating Synthetic Data for Tool-Using LLMs",
+      "content": "September 26, 2024 - In addition, the intrinsic evaluation metrics proposed rely on prompting a powerful LLM, which can become costly on large datasets. To address these challenges, we propose In-Context Evaluation (ICE) as an alternative automatic approach for assessing data quality.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T08:09:31.811640",
+      "metadata": {}
+    },
+    {
+      "id": "c30f4244",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_engineering",
+      "title": "Artificial intelligence engineering",
+      "content": "Artificial intelligence engineering (AI engineering) is a technical discipline that focuses on the design, development, and deployment of AI systems. AI engineering involves applying engineering principles and methodologies to create scalable, efficient, and reliable AI-based solutions. It merges aspects of data engineering and software engineering to create real-world applications in diverse domains such as healthcare, finance, autonomous systems, and industrial automation.\n\n",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T08:09:35.297253",
+      "metadata": {
+        "categories": [
+          "Articles with short description",
+          "Artificial intelligence engineering",
+          "Engineering disciplines",
+          "Short description is different from Wikidata"
+        ]
+      }
+    },
+    {
+      "id": "dc62109f",
+      "url": "https://en.wikipedia.org/wiki/Evidence-based_practice",
+      "title": "Evidence-based practice",
+      "content": "Evidence-based practice (EBP) is the idea that occupational practices ought to be based on scientific evidence. The movement towards evidence-based practices attempts to encourage and, in some instances, require professionals and other decision-makers to pay more attention to evidence to inform their decision-making. The goal of evidence-based practice is to eliminate unsound or outdated practices in favor of more-effective ones by shifting the basis for decision making from tradition, intuition, and unsystematic experience to firmly grounded scientific research. The proposal has been controversial, with some arguing that results may not specialize to individuals as well as traditional practices.\nEvidence-based practices have been gaining ground since the introduction of evidence-based medicine and have spread to the allied health professions, education, management, law, public policy, architecture, and other fields.  In light of studies showing problems in scientific research (such as the replication crisis), there is also a movement to apply evidence-based practices in scientific research itself. Research into the evidence-based practice of science is called metascience.\nAn individual or organisation is justified in claiming that a specific practice is evidence-based if, and only if, three conditions are met. First, the individual or organisation possesses comparative evidence about the effects of the specific practice in comparison to the effects of at least one alternativ…",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T08:09:37.616030",
+      "metadata": {
+        "categories": [
+          "All articles with specifically marked weasel-worded phrases",
+          "Articles with imported Creative Commons Attribution 4.0 text",
+          "Articles with short description",
+          "Articles with specifically marked weasel-worded phrases from August 2013",
+          "CS1 maint: publisher location"
+        ]
+      }
+    }
+  ],
+  "generated_at": "2026-05-01T08:16:20.140994",
+  "confidence_score": 0.0,
+  "total_sources": 10,
+  "research_iterations": 2
+}

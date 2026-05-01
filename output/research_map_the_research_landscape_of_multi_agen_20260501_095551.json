@@ -1,0 +1,720 @@
+{
+  "title": "Research Report: Map the research landscape of multi-agent LLM systems. Produce a structured report that includes a visualtaxonomy or design graph showing the major architectural patterns, how they relate, and where the openproblems are.",
+  "topic": "Map the research landscape of multi-agent LLM systems. Produce a structured report that includes a visualtaxonomy or design graph showing the major architectural patterns, how they relate, and where the openproblems are.",
+  "executive_summary": "The research landscape of multi-agent LLM systems is characterized by the emergence of new architectures and frameworks that enable sophisticated interactions and coordination among agents. These systems impose distinct architectural structures that govern how agents interact, store information, and coordinate tasks. Communication is a critical mechanism for coordinating the behaviors of multiple agents, and choosing the right communication protocol is essential for success. However, multi-agent LLM systems face unique scalability challenges and require a diagnostic and prescriptive roadmap to enhance scalability, interpretability, and resilience. Explainability and transparency are crucial in these systems to ensure safety and accountability, and value alignment is poorly understood. A comprehensive benchmark is necessary to evaluate LLM-based multi-agent systems across diverse, interactive scenarios. Various frameworks, such as AutoGen, CrewAI, CAMEL, ChatDev, LangGraph, and Google DeepMind's Agent Development Kit (ADK), are being developed to support the building of multi-agent systems.",
+  "sections": [],
+  "key_findings": [
+    "Multi-agent LLM systems are architectures in which two or more LLM-powered agents collaborate to accomplish tasks that would be too complex, large, or multi-faceted for a single agent.",
+    "Multi-agent LLM frameworks impose distinct architectural structures that govern how agents interact, store information, and coordinate tasks.",
+    "Communication is an effective mechanism for coordinating the behaviors of multiple agents, broadening their views of the environment, and supporting their collaborations.",
+    "LLM-based multi-agent systems have emerged as a new area of research, enabling more sophisticated interactions and coordination among agents.",
+    "Choosing or designing the right communication protocol is essential for the success of a multi-agent LLM system.",
+    "Multi-agent LLM systems face unique scalability challenges compared to single-agent systems.",
+    "Explainability and transparency are crucial in multi-agent LLM systems to ensure safety and accountability.",
+    "Value alignment in multi-agent LLM systems is poorly understood, particularly in how value perturbations propagate through agent interactions.",
+    "A comprehensive benchmark is necessary to evaluate LLM-based multi-agent systems across diverse, interactive scenarios.",
+    "LLM-based frameworks for building MAS include AutoGen, CrewAI, CAMEL, ChatDev, LangGraph, and Google DeepMind's Agent Development Kit (ADK)."
+  ],
+  "conflicts_identified": [],
+  "methodology": "",
+  "limitations": "",
+  "sources": [
+    {
+      "id": "aa0f8a5a",
+      "url": "https://sourcebae.com/blog/multi-agent-llm/",
+      "title": "Multi-Agent LLM Systems: Frameworks, Architecture & Examples ...",
+      "content": "Mar 20, 2026 · Multi-agent LLMs (also called multi-agent AI systems or multi-agentic AI) are architectures in which two or more LLM-powered agents collaborate to accomplish tasks that would be too complex, large, or multi-faceted for a single agent.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:35:39.969119",
+      "metadata": {}
+    },
+    {
+      "id": "7966d2b5",
+      "url": "https://arxiv.org/pdf/2602.03128",
+      "title": "Understanding Multi-Agent LLM Frameworks: A Unified Benchmark ...",
+      "content": "Feb 4, 2026 · Multi-agent LLM frameworks are widely used to accelerate the development of agent systems powered by large language models (LLMs). These frameworks impose distinct architectural structures that govern how agents interact, store information, and coordinate tasks.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:35:39.969155",
+      "metadata": {}
+    },
+    {
+      "id": "09eb2405",
+      "url": "https://en.wikipedia.org/wiki/Multi-agent_system",
+      "title": "Multi-agent system",
+      "content": "A multi-agent system (MAS) or \"self-organized system\" is a computational system composed of multiple interacting intelligent agents. Multi-agent systems can solve problems that are difficult or impossible for an individual agent or a monolithic system to solve. Intelligence may include methodic, functional, procedural approaches, algorithmic search or reinforcement learning. With advancements in large language models (LLMs), LLM-based multi-agent systems have emerged as a new area of research, enabling more sophisticated interactions and coordination among agents.\nDespite considerable overlap, a multi-agent system is not always the same as an agent-based model (ABM).  The goal of an ABM is to search for explanatory insight into the collective behavior of agents (which do not necessarily need to be \"intelligent\") obeying simple rules, typically in natural systems, rather than in solving specific practical or engineering problems. The terminology of ABM tends to be used more often in the science, and MAS in engineering and technology. Applications where multi-agent systems research may deliver an appropriate approach include online trading, disaster response, target surveillance and social structure modelling.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:35:46.425522",
+      "metadata": {
+        "categories": [
+          "All articles with unsourced statements",
+          "Articles with short description",
+          "Articles with unsourced statements from December 2016",
+          "CS1 errors: periodical ignored",
+          "CS1 maint: location missing publisher"
+        ]
+      }
+    },
+    {
+      "id": "d9a61c52",
+      "url": "https://en.wikipedia.org/wiki/AI_agent",
+      "title": "AI agent",
+      "content": "In the context of generative artificial intelligence, AI agents (also referred to as compound AI systems or agentic AI) are a class of intelligent agents distinguished by their ability to operate autonomously in complex environments. Agentic AI tools prioritize decision-making over content creation and do not require continuous oversight.\n\n",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:35:48.814159",
+      "metadata": {
+        "categories": [
+          "All articles lacking reliable references",
+          "Articles lacking reliable references from December 2025",
+          "Articles with short description",
+          "Artificial intelligence",
+          "CS1 maint: deprecated archival service"
+        ]
+      }
+    },
+    {
+      "id": "921926c3",
+      "url": "http://arxiv.org/abs/2203.08975v2",
+      "title": "A Survey of Multi-Agent Deep Reinforcement Learning with Communication",
+      "content": "Communication is an effective mechanism for coordinating the behaviors of multiple agents, broadening their views of the environment, and to support their collaborations. In the field of multi-agent deep reinforcement learning (MADRL), agents can improve the overall learning performance and achieve their objectives by communication. Agents can communicate various types of messages, either to all agents or to specific agent groups, or conditioned on specific constraints. With the growing body of research work in MADRL with communication (Comm-MADRL), there is a lack of a systematic and structural approach to distinguish and classify existing Comm-MADRL approaches. In this paper, we survey recent works in the Comm-MADRL field and consider various aspects of communication that can play a role in designing and developing multi-agent reinforcement learning systems. With these aspects in mind, we propose 9 dimensions along which Comm-MADRL approaches can be analyzed, developed, and compared. By projecting existing works into the multi-dimensional space, we discover interesting trends. We also propose some novel directions for designing future Comm-MADRL systems through exploring possible combinations of the dimensions.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T09:36:20.879813",
+      "metadata": {
+        "authors": [
+          "Changxi Zhu",
+          "Mehdi Dastani",
+          "Shihan Wang"
+        ],
+        "published": "2022-03-16",
+        "categories": [
+          "cs.MA",
+          "cs.LG"
+        ]
+      }
+    },
+    {
+      "id": "9de9ed80",
+      "url": "https://apxml.com/courses/agentic-llm-memory-architectures/chapter-5-multi-agent-systems/communication-protocols-llm-agents",
+      "title": "Communication Protocols for LLM Agents - apxml.com",
+      "content": "Choosing or designing the right communication protocol is essential for the success of a multi-agent LLM system. It dictates how agents coordinate, share information, and ultimately achieve collective goals.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:36:52.997425",
+      "metadata": {}
+    },
+    {
+      "id": "a13576fb",
+      "url": "https://arxiv.org/abs/2502.14321",
+      "title": "Beyond Self-Talk: A Communication-Centric Survey of LLM-Based ...LLM-Powered Multi-Agent Systems: A Technical Framework for ...Multi-Agent Systems with LLMs: Coordination and Communication ...LACP: LLM Agent Communication Protocol - NeurIPS 2025 WorkshopANALYSIS OF COMMUNICATION PROTOCOLS IN MULTI-AGENT SYSTEMSAgent Communication Protocol: A Practical Guide for Multi ...",
+      "content": "Feb 20, 2025 · This review aims to help researchers and practitioners gain a clear understanding of the communication mechanisms in LLM-MAS, thereby facilitating the design and deployment of robust, scalable, and secure multi-agent systems. This paper presents a comprehensive technical framework for constructing effective multi-agent systems powered by large language models (LLMs). We examine how m May 30, 2025 · This guide shows you how to build effective multi-agent LLM systems with proven coordination patterns, message passing techniques, and practical implementation strategies. This position paper argues that the field of LLM agents requires a unified, telecom-inspired communication protocol to ensure safety, interoperability, and scalability, especially within the context of Next Generation (NextG) networks. The purpose of this paper is to provide a detailed analysis of multi-agent protocols used in inter-agent communication so that practitioners can easily evaluate and compare different protocols and accordingly decide which best suits their needs when designing MAS. Aug 25, 2025 · This article gives a practical, implementation-first blueprint for designing and shipping a production-ready agent communication protocol for multi-agent systems, including LLM-driven agents.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:36:52.997458",
+      "metadata": {}
+    },
+    {
+      "id": "427cdfe7",
+      "url": "https://arxiv.org/html/2402.03578v2",
+      "title": "LLM Multi-Agent Systems: Challenges and Open Problems",
+      "content": "This paper explores multi-agent systems, offering a survey of the existing works while shedding light on the challenges and open problems in it. We study major components in multi-agent systems, including planning and memory storage, and address unique challenges posed by multi-agent systems, compared with single-agent systems. We also explore potential application of multi-agent systems in ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:38:49.771125",
+      "metadata": {}
+    },
+    {
+      "id": "64c60bfb",
+      "url": "https://apxml.com/courses/agentic-llm-memory-architectures/chapter-5-multi-agent-systems/challenges-scaling-mas",
+      "title": "Challenges in Scaling Multi-Agent LLM Systems - apxml.com",
+      "content": "Addressing these scaling challenges requires a shift from agent-centric design to system-level architectural thinking, incorporating principles from distributed systems, network engineering, and complex systems theory alongside LLM expertise.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:38:49.771171",
+      "metadata": {}
+    },
+    {
+      "id": "972f8621",
+      "url": "https://www.heavybit.com/library/article/how-to-approach-multi-agent-frameworks",
+      "title": "How to Approach Multi-Agent Frameworks | Heavybit",
+      "content": "However, to scale their AI programs, organizations are experimenting with agentic orchestration , the process of managing multiple agents as each one ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:39:20.246314",
+      "metadata": {}
+    },
+    {
+      "id": "65ad6758",
+      "url": "https://arxiv.org/html/2603.28990v1",
+      "title": "Drop the Hierarchy and Roles: How Self-Organizing LLM Agents",
+      "content": "... computational experiment—the largest to date—comparing coordination architectures in multi-agent systems based on large language models (LLMs).",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:39:20.246379",
+      "metadata": {}
+    },
+    {
+      "id": "22c4ff7d",
+      "url": "http://arxiv.org/abs/1311.5108v1",
+      "title": "A Methodology to Engineer and Validate Dynamic Multi-level Multi-agent Based Simulations",
+      "content": "This article proposes a methodology to model and simulate complex systems, based on IRM4MLS, a generic agent-based meta-model able to deal with multi-level systems. This methodology permits the engineering of dynamic multi-level agent-based models, to represent complex systems over several scales and domains of interest. Its goal is to simulate a phenomenon using dynamically the lightest representation to save computer resources without loss of information. This methodology is based on two mechanisms: (1) the activation or deactivation of agents representing different domain parts of the same phenomenon and (2) the aggregation or disaggregation of agents representing the same phenomenon at different scales.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T09:39:23.591624",
+      "metadata": {
+        "authors": [
+          "Jean-Baptiste Soyez",
+          "Gildas Morvan",
+          "Daniel Dupont",
+          "Rochdi Merzouki"
+        ],
+        "published": "2013-11-20",
+        "categories": [
+          "cs.MA"
+        ]
+      }
+    },
+    {
+      "id": "3800b92c",
+      "url": "https://arxiv.org/abs/2309.17234",
+      "title": "[2309.17234] Cooperation, Competition, and Maliciousness: LLM ...Cooperative and Competitive LLM-Based Multi-Agent Systems for ...Cooperation vs Competition: Inside Multi‑Agent System DesignMultiAgentBench : Evaluating the Collaboration and ...Cooperative and Competitive Multi-Agent Systems: From ...Cooperation, Competition, and Maliciousness: LLM-Stakeholders ...Comparing Multi-Agent Collaboration and Competition | Galileo",
+      "content": "Sep 29, 2023 · The fundamental task of negotiation spans many key features of communication, such as cooperation, competition, and manipulation potentials. Thus, we propose using scorable negotiation to evaluate LLMs. We create a testbed of complex multi-agent, multi-issue, and semantically rich negotiation games. Apr 3, 2025 · Currently, multi-agent systems are mainly based on cooperation between agents, but we will also explore the competition between them, which may help in finding a trade-off between accuracy and fairness or between different stakeholders’ objectives. Master the core dynamics of Multi‑Agent Systems with this deep dive into cooperation vs competition, explore reward design, MARL algorithms, and communication strategies to architect scalable, intelligent distributed agents. 2 days ago · In this paper, we introduce MultiAgentBench, a comprehensive benchmark designed to evaluate LLM-based multi-agent systems across diverse, interactive scenarios. In a multi-agent system, agents with a certain degree of autonomy generate complex interactions due to the correlation and coordination, which is manifested as cooperative/competitive behavior. This survey focuses on multi-agent cooperative optimization and cooperative/non-cooperative games. The fundamental task of negotiation spans many key features of communication, such as cooperation, competition, and manipulation potentials. Thus, we propose using scorable negotiation to evaluate LLMs. Apr 20, 2025 · When designing multi-agent systems, understanding the differences between collaboration and competition affects every aspect of your system, from its architecture to how you'll measure success:",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:39:53.084578",
+      "metadata": {}
+    },
+    {
+      "id": "73afb2ce",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-88720-8_33",
+      "title": "Cooperative and Competitive LLM-Based Multi-Agent Systems for ...",
+      "content": "Apr 3, 2025 · Currently, multi-agent systems are mainly based on cooperation between agents, but we will also explore the competition between them, which may help in finding a trade-off between accuracy and fairness or between different stakeholders’ objectives.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:39:53.084606",
+      "metadata": {}
+    },
+    {
+      "id": "1fbfa1b1",
+      "url": "http://arxiv.org/abs/2412.06333v3",
+      "title": "Augmenting the action space with conventions to improve multi-agent cooperation in Hanabi",
+      "content": "The card game Hanabi is considered a strong medium for the testing and development of multi-agent reinforcement learning (MARL) algorithms, due to its cooperative nature, partial observability, limited communication and remarkable complexity. Previous research efforts have explored the capabilities of MARL algorithms within Hanabi, focusing largely on advanced architecture design and algorithmic manipulations to achieve state-of-the-art performance for various number of cooperators. However, this often leads to complex solution strategies with high computational cost and requiring large amounts of training data. For humans to solve the Hanabi game effectively, they require the use of conventions, which often allows for a means to implicitly convey ideas or knowledge based on a predefined, and mutually agreed upon, set of \"rules\" or principles. Multi-agent problems containing partial observability, especially when limited communication is present, can benefit greatly from the use of implicit knowledge sharing. In this paper, we propose a novel approach to augmenting an agent's action space using conventions, which act as a sequence of special cooperative actions that span over and include multiple time steps and multiple agents, requiring agents to actively opt in for it to reach fruition. These conventions are based on existing human conventions, and result in a significant improvement on the performance of existing techniques for self-play and cross-play for various number o…",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T09:39:58.385556",
+      "metadata": {
+        "authors": [
+          "F. Bredell",
+          "H. A. Engelbrecht",
+          "J. C. Schoeman"
+        ],
+        "published": "2024-12-09",
+        "categories": [
+          "cs.MA",
+          "cs.AI",
+          "cs.LG"
+        ]
+      }
+    },
+    {
+      "id": "e3b4d7ea",
+      "url": "https://arxiv.org/html/2512.18733v1",
+      "title": "Explainable and Fine-Grained Safeguarding of LLM Multi-Agent",
+      "content": "Explainable and Fine-Grained Safeguarding of LLM Multi-Agent Systems via Bi-Level Graph Anomaly Detection ... LLM)-based multi-agent systems (MAS) ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:41:07.950763",
+      "metadata": {}
+    },
+    {
+      "id": "1f189017",
+      "url": "https://arxiv.org/html/2510.07614v1",
+      "title": "Traceability and Accountability in Role-Specialized Multi-Agent",
+      "content": "Our work sits at the intersection of multi-agent LLM systems for software development and verifiable feedback loops for agentic workflows, addressing ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:41:07.950795",
+      "metadata": {}
+    },
+    {
+      "id": "2bd2447b",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "title": "Large language model",
+      "content": "A large language model (LLM) is a neural network trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can generate, summarize, translate and parse text in many contexts, and are a foundational technology behind modern chatbots. Biased or inaccurate training data can make an LLM's output less reliable. \nAs of 2024, the largest and most capable LLMs are all based on transformer architectures, which, according to the 2017 paper \"Attention Is All You Need\", can be more efficient and parallelizable than earlier statistical and recurrent neural network models. Research into other architectures, such as state space models, is ongoing.\nBenchmark evaluations for LLMs attempt to measure model reasoning, factual accuracy, alignment, and safety.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:41:11.020935",
+      "metadata": {
+        "categories": [
+          "All articles containing potentially dated statements",
+          "All articles lacking reliable references",
+          "All articles with unsourced statements",
+          "Articles containing potentially dated statements from 2025",
+          "Articles lacking reliable references from December 2025"
+        ]
+      }
+    },
+    {
+      "id": "24398fe2",
+      "url": "https://en.wikipedia.org/wiki/Explainable_artificial_intelligence",
+      "title": "Explainable artificial intelligence",
+      "content": "Within artificial intelligence (AI), explainable AI (XAI), generally overlapping with interpretable AI or explainable machine learning (XML), is a field of research that explores methods that provide humans with the ability of intellectual oversight over AI algorithms. The main focus is on the reasoning behind the decisions or predictions made by the AI algorithms, to make them more understandable and transparent. This addresses users' requirement to assess safety and scrutinize the automated decision making in applications. XAI counters the \"black box\" tendency of machine learning, where even the AI's designers cannot explain why it arrived at a specific decision.\nXAI hopes to help users of AI-powered systems perform more effectively by improving their understanding of how those systems reason. XAI may be an implementation of the social right to explanation. Even if there is no such legal right or regulatory requirement, XAI can improve the user experience of a product or service by helping end users trust that the AI is making good decisions. XAI aims to explain what has been done, what is being done, and what will be done next, and to unveil which information these actions are based on. This makes it possible to confirm existing knowledge, challenge existing knowledge, and generate new assumptions.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:41:13.592406",
+      "metadata": {
+        "categories": [
+          "All articles with style issues",
+          "Articles with short description",
+          "Artificial intelligence",
+          "Artificial intelligence engineering",
+          "CS1 maint: multiple names: authors list"
+        ]
+      }
+    },
+    {
+      "id": "0c20c71b",
+      "url": "https://arxiv.org/html/2508.10494v1",
+      "title": "A Unified Multi-Agent Framework for Universal Multimodal",
+      "content": "We propose MAGUS (Multi-Agent Guided Unified Multimodal System), a modular framework that unifies multimodal understanding and generation via two ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:42:20.965894",
+      "metadata": {}
+    },
+    {
+      "id": "f24aa162",
+      "url": "https://arxiv.org/html/2601.04703v1",
+      "title": "Beyond Monolithic Architectures: A Multi-Agent Search and",
+      "content": "We identify the compound impact of output verbosity, sparse rewards, and tool noise on agentic search, which explains why monolithic architectures ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:42:20.965923",
+      "metadata": {}
+    },
+    {
+      "id": "1d173c54",
+      "url": "https://www.linkedin.com/pulse/emergent-behavior-multi-agent-systems-when-ai-starts-acting-gareth-qnkdf",
+      "title": "Emergent Behavior in Multi-Agent Systems: When AI Starts Acting...",
+      "content": "emergent AI behavior, multi-agent systems, complex systems, AI unpredictability. One of the most surprising moments when working with multi-agent systems is this: You design agents with clear roles. You define rules.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:43:08.735123",
+      "metadata": {}
+    },
+    {
+      "id": "352ab41f",
+      "url": "https://medium.com/@sanjeevseengh/emergent-behavior-in-multi-agent-systems-how-complex-behaviors-arise-from-simple-agent-0e4503b376ce",
+      "title": "Emergent Behavior in Multi-Agent Systems: How Complex... | Medium",
+      "content": "Emergent behavior is a property of a system, not of its individual components. It occurs when the interactions of multiple agents give rise to macroscopic patterns or behaviors that are not predictable or easily explained by analyzing the agents in isolation.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:43:08.735276",
+      "metadata": {}
+    },
+    {
+      "id": "21320f84",
+      "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+      "title": "Generative pre-trained transformer",
+      "content": "A generative pre-trained transformer (GPT) is a type of large language model (LLM) that is widely used in generative artificial intelligence chatbots. GPTs are based on a deep learning architecture called the transformer. They are pre-trained on large datasets of unlabeled content, and able to generate novel content.\nOpenAI was the first to apply generative pre-training to the transformer architecture, introducing the GPT-1 model in 2018. The company has since released many bigger GPT models. The chatbot ChatGPT, released in late 2022 (using GPT-3.5), was followed by many competitor chatbots using their own generative pre-trained transformers to generate text, such as Gemini, DeepSeek and Claude.\nGPTs are primarily used to generate text, but can be trained to generate other kinds of data. For example, GPT-4o can process and generate text, images and audio. To improve performance on complex tasks, some GPTs, such as OpenAI o3, allocate more computation time analyzing the problem before generating an output, and are called reasoning models. In 2025, GPT-5 was released with a router that automatically selects whether to use a faster model or slower reasoning model based on the provided task.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:43:17.189507",
+      "metadata": {
+        "categories": [
+          "2018 in artificial intelligence",
+          "All Wikipedia articles written in American English",
+          "All articles with unsourced statements",
+          "Articles with short description",
+          "Articles with unsourced statements from January 2026"
+        ]
+      }
+    },
+    {
+      "id": "f199599f",
+      "url": "https://arxiv.org/html/2602.08567v1",
+      "title": "ValueFlow: Measuring the Propagation of Value Perturbations in...",
+      "content": "Multi-agent large language model (LLM) systems increasingly consist of agents that observe and respond to one another’s outputs. While value alignment is typically evaluated for isolated models, how value perturbations propagate through agent interactions remains poorly understood.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:44:11.764554",
+      "metadata": {}
+    },
+    {
+      "id": "1e46c364",
+      "url": "https://www.researchgate.net/publication/398601945_On_the_Dynamics_of_Multi-Agent_LLM_Communities_Driven_by_Value_Diversity",
+      "title": "(PDF) On the Dynamics of Multi-Agent LLM Communities Driven by...",
+      "content": "With LLM agents, there is an opportunity to see richer normative behaviors. AI Alignment and Value System Current AI alignment approaches typically rely on simpliﬁed.A systematic review. of norm emergence in multi-agent systems, 2024. URL.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:44:11.764607",
+      "metadata": {}
+    },
+    {
+      "id": "3d34b921",
+      "url": "https://en.wikipedia.org/wiki/AI_alignment",
+      "title": "AI alignment",
+      "content": "In the field of artificial intelligence (AI), alignment aims to steer AI systems toward a person's or group's intended goals, preferences, or ethical principles. An AI system is considered aligned if it advances the intended objectives. A misaligned AI system pursues unintended objectives.\nIt is often difficult for AI designers to specify the full range of desired and undesired behaviors. Therefore, the designers often use simpler proxy goals, such as gaining human approval. But proxy goals can overlook necessary constraints or reward the AI system for merely appearing aligned. AI systems may also find loopholes that allow them to accomplish their proxy goals efficiently but in unintended, sometimes harmful, ways (reward hacking).\nAdvanced AI systems may develop unwanted instrumental strategies, such as seeking power or self-preservation because such strategies help them achieve their assigned final goals. Furthermore, they might develop undesirable emergent goals that could be hard to detect before the system is deployed and encounters new situations and data distributions. Empirical research showed in 2024 that advanced large language models (LLMs) such as OpenAI o1 or Claude 3 sometimes engage in strategic deception to achieve their goals or prevent them from being changed.\nSome of these issues affect existing commercial systems such as LLMs, robots, autonomous vehicles, and social media recommendation engines. Some AI researchers argue that more capable future systems wil…",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:44:16.893022",
+      "metadata": {
+        "categories": [
+          "AI risk",
+          "AI safety",
+          "All Wikipedia articles written in American English",
+          "All articles containing potentially dated statements",
+          "All articles lacking reliable references"
+        ]
+      }
+    },
+    {
+      "id": "e976dc57",
+      "url": "http://arxiv.org/abs/2602.04518v1",
+      "title": "Learning the Value Systems of Agents with Preference-based and Inverse Reinforcement Learning",
+      "content": "Agreement Technologies refer to open computer systems in which autonomous software agents interact with one another, typically on behalf of humans, in order to come to mutually acceptable agreements. With the advance of AI systems in recent years, it has become apparent that such agreements, in order to be acceptable to the involved parties, must remain aligned with ethical principles and moral values. However, this is notoriously difficult to ensure, especially as different human users (and their software agents) may hold different value systems, i.e. they may differently weigh the importance of individual moral values. Furthermore, it is often hard to specify the precise meaning of a value in a particular context in a computational manner. Methods to estimate value systems based on human-engineered specifications, e.g. based on value surveys, are limited in scale due to the need for intense human moderation. In this article, we propose a novel method to automatically \\emph{learn} value systems from observations and human demonstrations. In particular, we propose a formal model of the \\emph{value system learning} problem, its instantiation to sequential decision-making domains based on multi-objective Markov decision processes, as well as tailored preference-based and inverse reinforcement learning algorithms to infer value grounding functions and value systems. The approach is illustrated and evaluated by two simulated use cases.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T09:44:19.375600",
+      "metadata": {
+        "authors": [
+          "Andrés Holgado-Sánchez",
+          "Holger Billhardt",
+          "Alberto Fernández",
+          "Sascha Ossowski"
+        ],
+        "published": "2026-02-04",
+        "categories": [
+          "cs.CY",
+          "cs.AI",
+          "cs.LG"
+        ]
+      }
+    },
+    {
+      "id": "4ef510db",
+      "url": "https://www.deepchecks.com/how-multi-agent-llms-differ-from-traditional-llms/",
+      "title": "Multi-Agent LLMs: How Specialized AI Agents Collaborate - Deepchecks",
+      "content": "While traditional LLMs can perform tasks like language translation, content creation, and coding, multi-agent LLM systems are used for tasks like end-to-end customer support, deep research, analysis, logical thinking, planning, and data validation.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:45:12.315906",
+      "metadata": {}
+    },
+    {
+      "id": "3adc1ffb",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-15632-7_9",
+      "title": "LLM-Based Multi-agent Systems: Frameworks, Evaluation, Open ... - Springer",
+      "content": "Large Language Models (LLMs) have propelled the emergence of sophisticated Multi-Agent Systems (MAS) that leverage language-driven reasoning, collaboration, and autonomous decision-making. This paper presents a comprehensive review of state-of-the-art LLM-based frameworks for building MAS - including AutoGen, CrewAI, CAMEL, ChatDev, LangGraph, and Google DeepMind's Agent Development Kit (ADK ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:45:12.315936",
+      "metadata": {}
+    },
+    {
+      "id": "441c02aa",
+      "url": "https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence",
+      "title": "Glossary of artificial intelligence",
+      "content": "This glossary of artificial intelligence is a list of definitions of terms and concepts relevant to the study of artificial intelligence (AI), its subdisciplines, and related fields. Related glossaries include Glossary of computer science, Glossary of robotics, Glossary of machine vision, and Glossary of logic.\n\n",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:45:15.711771",
+      "metadata": {
+        "categories": [
+          "All articles with dead external links",
+          "All articles with unsourced statements",
+          "Articles with dead external links from July 2022",
+          "Articles with dead external links from September 2023",
+          "Articles with permanently dead external links"
+        ]
+      }
+    },
+    {
+      "id": "2659d842",
+      "url": "https://arxiv.org/abs/2503.01935",
+      "title": "MultiAgentBench: Evaluating the Collaboration and Competition of LLM agents",
+      "content": "In this paper, we introduce MultiAgentBench, a comprehensive benchmark designed to evaluate LLM-based multi-agent systems across diverse, interactive scenarios. Our framework measures not only task completion but also the quality of collaboration and competition using novel, milestone-based key performance indicators.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:45:56.419252",
+      "metadata": {}
+    },
+    {
+      "id": "011a1aa9",
+      "url": "https://arxiv.org/html/2401.12159v4",
+      "title": "An Identity Based Agent Model for AI Value Alignment",
+      "content": "As AI systems become increasingly integrated into various aspects of society, ensuring their alignment with human values and ethical principles of ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:47:01.335512",
+      "metadata": {}
+    },
+    {
+      "id": "bfaa57c3",
+      "url": "https://arxiv.org/html/2312.01818v3",
+      "title": "Hybrid Approaches for Moral Value Alignment in AI Agents: a",
+      "content": "The agent in influenced by individual humans (with their own task-specific goals and values) and human institutions or societies (which may also have ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:47:01.335545",
+      "metadata": {}
+    },
+    {
+      "id": "7d918441",
+      "url": "https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback",
+      "title": "Reinforcement learning from human feedback",
+      "content": "In machine learning, reinforcement learning from human feedback (RLHF) is a technique to align an intelligent agent with human preferences. It involves training a reward model to represent preferences, which can then be used to train other models through reinforcement learning.\nIn classical reinforcement learning, an intelligent agent's goal is to learn a function that guides its behavior, called a policy. The function is iteratively optimized to increase the reward signal derived from the agent's task performance. However, explicitly defining a reward function that accurately approximates human preferences is challenging. Therefore, RLHF seeks to train a \"reward model\" directly from human feedback. The reward model is first trained in a supervised manner to predict if a response to a given prompt is good (high reward) or bad (low reward) based on ranking data collected from human annotators. This model then serves as a reward function to improve an agent's policy through an optimization algorithm like proximal policy optimization.\n\nRLHF has applications in various domains in machine learning, including natural language processing tasks such as text summarization and conversational agents, computer vision tasks like text-to-image models, and the development of video game bots. While RLHF is an effective method of training models to act better in accordance with human preferences, it also faces challenges due to the way the human preference data is collected. Though RLHF does …",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:47:04.319029",
+      "metadata": {
+        "categories": [
+          "2017 in artificial intelligence",
+          "All articles needing additional references",
+          "Articles needing additional references from March 2026",
+          "Articles with short description",
+          "Good articles"
+        ]
+      }
+    },
+    {
+      "id": "dd6b35ed",
+      "url": "https://en.wikipedia.org/wiki/Human-AI_interaction",
+      "title": "Human-AI interaction",
+      "content": "Human-AI interaction is a developing field of research and a sub-field of Human-computer interaction (HCI).\nHCI is a field of research that explores the interactions between humans and computer-based technology, focusing on design implementation, user experience, and psychological factors. With the proliferation of artificial intelligence (AI), there has developed a sub-section of HCI research dedicated specifically to artificial intelligence and how people interact with and are impacted by it. This is Human-AI interaction, abbreviated either as HAX or HAII.\n\n",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:47:06.807657",
+      "metadata": {
+        "categories": [
+          "All articles with unsourced statements",
+          "Articles with short description",
+          "Articles with unsourced statements from April 2026",
+          "Articles with weasel words from January 2026",
+          "Artificial intelligence"
+        ]
+      }
+    },
+    {
+      "id": "fec51cdd",
+      "url": "https://newsletter.victordibia.com/p/multi-agent-llm-applications-a-review",
+      "title": "Multi-Agent LLM Applications | A Review of Current Research,",
+      "content": "... of multiple agents can improve reasoning and factuality ( Du et al., 2023 ), as well as improve divergent thinking ( Liang et al., 2023 ) - well known ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:48:32.013395",
+      "metadata": {}
+    },
+    {
+      "id": "0d4a7607",
+      "url": "https://arxiv.org/html/2404.04834v4",
+      "title": "LLM-Based Multi-Agent Systems for Software Engineering:",
+      "content": "In response to this challenge, developing LLM-Based Multi-Agent (LMA) systems represents a pivotal evolution, aiming to boost performance via ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:48:32.013474",
+      "metadata": {}
+    },
+    {
+      "id": "1708364c",
+      "url": "https://arxiv.org/abs/2510.17149",
+      "title": "[2510.17149] Which LLM Multi-Agent Protocol to Choose? - arXiv.org",
+      "content": "As large-scale multi-agent systems evolve, the communication protocol layer has become a critical yet under-evaluated factor shaping performance and reliability. Despite the existence of diverse protocols (A2A, ACP, ANP, Agora, etc.), selection is often intuition-driven and lacks standardized guidance. We introduce ProtocolBench, a benchmark that systematically compares agent protocols along ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:49:19.370921",
+      "metadata": {}
+    },
+    {
+      "id": "696115ad",
+      "url": "https://www.daaam.info/Downloads/Pdfs/science_books_pdfs/2024/Sc_Book_2024-008.pdf",
+      "title": "PDF Analysis of Communication Protocols in Multi-agent Systems",
+      "content": "Abstract:The use of Multi-Agent Systems (MAS) in different fields of implementation comes with challenges. Some systems are generally more complex, while some do not require robust infrastructure. In both cases, choosing the appropriate MAS communication protocol is essential. This paper aims to list and explain the key protocols such as FIPA-ACL, KQML, MQTT, AMQP, WebRTC, and CoAP. Analysis ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:49:19.370950",
+      "metadata": {}
+    },
+    {
+      "id": "2a746668",
+      "url": "https://medium.com/@sahin.samia/how-to-design-multi-agent-llm-systems-for-complex-research-tasks-effectively-91da52a92ccc",
+      "title": "How to Design Multi-Agent LLM Systems for Complex... | Medium",
+      "content": "This is where multi-agent LLM systems come in. Instead of relying on a single model to do everything — from planning and searching to reading and summarizing — a multi-agent architecture distributes these responsibilities across specialized agents.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:49:49.726542",
+      "metadata": {}
+    },
+    {
+      "id": "fa634ea8",
+      "url": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+      "title": "Gemini (language model)",
+      "content": "Gemini is a family of multimodal large language models (LLMs) developed by Google DeepMind, and the successor to LaMDA and PaLM 2. Comprising Gemini Pro, Gemini Deep Think, Gemini Flash, and Gemini Flash Lite, it was announced on December 6, 2023. It powers the chatbot of the same name.\n\n",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:49:55.211175",
+      "metadata": {
+        "categories": [
+          "2023 in artificial intelligence",
+          "2023 software",
+          "All Wikipedia articles needing clarification",
+          "All Wikipedia articles written in American English",
+          "All pages needing factual verification"
+        ]
+      }
+    },
+    {
+      "id": "c29a2e6f",
+      "url": "https://arxiv.org/html/2602.21351v1",
+      "title": "A Hierarchical Multi-Agent System for Autonomous Discovery in",
+      "content": "Here we present PANGAEA-GPT, a hierarchical multi-agent framework designed for autonomous data discovery and analysis.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:50:23.873891",
+      "metadata": {}
+    },
+    {
+      "id": "a8ed2c37",
+      "url": "https://www.superannotate.com/blog/multi-agent-llms",
+      "title": "Multi-agent LLMs in 2026 [+frameworks] | SuperAnnotate",
+      "content": "Multi-agent LLM challenges and limitations.Multi-agent LLM components include specialized agents, a manager or orchestrator, LLM-based reasoning, tools such as web search or document processing, and human oversight to review decisions.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:50:27.034241",
+      "metadata": {}
+    },
+    {
+      "id": "8e2e7a6c",
+      "url": "https://arxiv.org/pdf/2402.01680",
+      "title": "Large Language Model based Multi-Agents: A Survey of Progress and...",
+      "content": "In LLM-MA systems, agents are defined by their traits, ac-tions, and skills, which are tailored to meet specific goals.Communication Paradigms: Current LLM-MA systems mainly take three paradigms for communication: Coopera-tive, Debate, and Competitive.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:50:27.034278",
+      "metadata": {}
+    },
+    {
+      "id": "f69d9e09",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+      "title": "Artificial intelligence",
+      "content": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals.\nHigh-profile applications of AI include advanced web search engines, chatbots, virtual assistants, autonomous vehicles, and play and analysis in strategy games (e.g., chess and Go). Since the 2020s, generative AI has become widely available to generate images, audio, and videos from text prompts.\nThe traditional goals of AI research include learning, reasoning, knowledge representation, planning, natural language processing, and perception, as well as support for robotics. To reach these goals, AI researchers have used techniques including state space search and mathematical optimization, formal logic, artificial neural networks, and methods based on statistics, operations research, and economics. AI also draws upon psychology, linguistics, philosophy, neuroscience, and other fields. Some companies, such as OpenAI, Google DeepMind and Meta, aim to create artificial general intelligence (AGI) – AI that can complete virtually any cognitive task at least as well as a human.\nArtificial intelligen…",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:50:30.713036",
+      "metadata": {
+        "categories": [
+          "Articles with Internet Encyclopedia of Philosophy links",
+          "Articles with excerpts",
+          "Articles with short description",
+          "Artificial intelligence",
+          "CS1: long volume value"
+        ]
+      }
+    },
+    {
+      "id": "205da2ac",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "title": "ChatGPT",
+      "content": "ChatGPT is a generative artificial intelligence chatbot developed by OpenAI. It was released in November 2022. It uses large language models—specifically generative pre-trained transformers (GPTs)—to generate text, speech, and images in response to user prompts. It is credited with accelerating the AI boom, an ongoing period marked by rapid investment and public attention toward the field of artificial intelligence (AI). OpenAI operates the service on a freemium model. Users can interact with ChatGPT through text, audio, and image prompts.\nChatGPT was quickly adopted, reaching 100 million monthly active users two months after its release and 900 million weekly active users in February 2026. It has been lauded for its potential to transform numerous professional fields, and has instigated public debate about the nature of creativity and the future of knowledge work.\nThe chatbot has also been criticized for its limitations and potential for unethical use. It can generate plausible-sounding but incorrect or nonsensical answers, known as hallucinations. Biases in its training data have been reflected in its responses. The chatbot can facilitate academic dishonesty, generate misinformation, and create malicious code. The ethics of its development, particularly the use of copyrighted content as training data, have also drawn controversy.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T09:50:33.279312",
+      "metadata": {
+        "categories": [
+          "2022 in artificial intelligence",
+          "2022 software",
+          "All Wikipedia articles written in American English",
+          "All articles lacking reliable references",
+          "Articles lacking reliable references from April 2026"
+        ]
+      }
+    },
+    {
+      "id": "1f6803f0",
+      "url": "https://www.researchgate.net/publication/399528176_Evaluating_Explainability_in_Multi-Agent_LLM_Ecosystems",
+      "title": "Evaluating Explainability in Multi-Agent LLM Ecosystems",
+      "content": "Jan 7, 2026 · The growing deployment of multi-agent systems powered by large language models (LLMs) has underscored the importance of explainability to ensure transparency, accountability, and...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:51:09.382508",
+      "metadata": {}
+    },
+    {
+      "id": "43842361",
+      "url": "https://medium.com/@fahey_james/from-monolith-to-microagents-the-shift-toward-modular-intelligence-in-ai-architectures-07055ae7fbc0",
+      "title": "From Monolith to Microagents: The Shift Toward Modular ... - Medium",
+      "content": "This article explores the shift from monolithic LLM apps to dynamic multi-agent systems, drawing inspiration from cloud-native microservices, and outlines practical frameworks and deployment ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:51:47.573270",
+      "metadata": {}
+    },
+    {
+      "id": "7b5b00ed",
+      "url": "https://www.gocodeo.com/post/decoding-architecture-patterns-in-ai-agent-frameworks-modular-vs-monolithic",
+      "title": "Decoding Architecture Patterns in AI Agent Frameworks, Modular vs ...",
+      "content": "As AI agents become more autonomous and multi-capable, the choice of architectural pattern underlying an agent framework becomes critically important. While the debate between monolithic and modular architectures is decades old in traditional software engineering, its implications in AI agent frameworks are uniquely complex. These agents often span multiple reasoning loops, rely on multi-modal ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:51:47.573323",
+      "metadata": {}
+    },
+    {
+      "id": "00a86862",
+      "url": "https://github.com/taichengguo/LLM_MultiAgents_Survey_Papers",
+      "title": "GitHub - taichengguo/LLM_MultiAgents_Survey_Papers: Large...",
+      "content": "Multi-Agents for World Simulation. Multi-Agents Datasets and Benchmarks. Table of Content (ToC). [2023/08] AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:52:19.745402",
+      "metadata": {}
+    },
+    {
+      "id": "f1ec7eb2",
+      "url": "https://arxiv.org/abs/2506.09656",
+      "title": "[2506.09656] Multi-level Value Alignment in Agentic AI Systems: Survey ...",
+      "content": "Third, value alignment methods and evaluation are mapped to this tiered framework through systematic examination of benchmarking datasets and relevant methodologies. Additionally, we delve into value coordination among multiple agents within agentic AI systems. Finally, we propose several potential research directions in this field.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:52:59.322154",
+      "metadata": {}
+    },
+    {
+      "id": "1a7d12ad",
+      "url": "https://link.springer.com/article/10.1007/s44336-024-00009-2",
+      "title": "A survey on LLM-based multi-agent systems: workflow ... - Springer",
+      "content": "The pursuit of more intelligent and credible autonomous systems, akin to human society, has been a long-standing endeavor for humans. Leveraging the exceptional reasoning and planning capabilities of large language models (LLMs), LLM-based agents have been proposed and have achieved remarkable success across a wide array of tasks. Notably, LLM-based multi-agent systems (MAS) are considered a ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:52:59.322202",
+      "metadata": {}
+    },
+    {
+      "id": "c1c83e26",
+      "url": "https://link.springer.com/article/10.1007/s10458-023-09633-6",
+      "title": "A survey of multi-agent deep reinforcement learning with communication ...",
+      "content": "We further clarify the differences between learning tasks with communication and emergent language in Sect. 2.2. In our survey paper, we review the Comm-MADRL literature by focusing on how communication can be utilized to improve the performance of multi-agent deep reinforcement learning techniques.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:53:50.079493",
+      "metadata": {}
+    },
+    {
+      "id": "ed021b94",
+      "url": "https://rljclub.github.io/posts/emergent-communication-in-multi-agent-reinforcement-learning/",
+      "title": "Emergent Communication in Multi-Agent RL | RL Journal Club",
+      "content": "The Nine Dimensions of Communication As the field of Comm-MADRL grows, it's essential to have a framework for understanding and classifying the different approaches. The paper \"A survey of multi-agent deep reinforcement learning with communication\" proposes a new, systematic way to do this using nine dimensions.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T09:53:50.079545",
+      "metadata": {}
+    }
+  ],
+  "generated_at": "2026-05-01T09:55:51.355830",
+  "confidence_score": 0.0,
+  "total_sources": 55,
+  "research_iterations": 2
+}

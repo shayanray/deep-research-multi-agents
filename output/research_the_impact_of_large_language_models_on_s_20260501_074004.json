@@ -1,0 +1,792 @@
+{
+  "title": "Research Report: The impact of large language models on scientific research",
+  "topic": "The impact of large language models on scientific research",
+  "executive_summary": "The impact of large language models on scientific research is a multifaceted topic with both positive and negative aspects. On the one hand, large language models have revolutionized the way text and other modalities of data are handled in various scientific fields, achieving superior performance in applications and augmenting the scientific discovery process. They can assist scientists in simple tasks such as acting as copilots and in complex tasks such as autonomously performing experiments and proposing novel hypotheses. However, large language models are also prone to overgeneralizing scientific conclusions, posing a significant risk of large-scale misinterpretations of research findings. Additionally, biased or inaccurate training data can make a large language model's output less reliable. The use of large language models in scientific research has its roots in the early 1990s with IBM's statistical models pioneering word alignment techniques for machine translation. Despite the challenges, large language models can address challenges in traditional peer review systems, such as delays, inconsistencies, and systemic inequities. Overall, the impact of large language models on scientific research is a complex and evolving field that requires careful consideration of both the benefits and limitations of these models.",
+  "sections": [],
+  "key_findings": [
+    "Large language models have revolutionized the way text and other modalities of data are handled in various scientific fields, achieving superior performance in applications and augmenting the scientific discovery process.",
+    "Peer review is a crucial part of scientific research, used to maintain quality standards, improve performance, and provide credibility.",
+    "Language model benchmarks are standardized tests designed to evaluate the performance of language models on various natural language processing tasks.",
+    "Large language models are prone to overgeneralizing scientific conclusions, posing a significant risk of large-scale misinterpretations of research findings.",
+    "Biased or inaccurate training data can make a large language model's output less reliable.",
+    "Benchmark evaluations for large language models attempt to measure model reasoning, factual accuracy, alignment, and safety.",
+    "Large language models can assist scientists in simple tasks such as acting as copilots and in complex tasks such as autonomously performing experiments and proposing novel hypotheses.",
+    "The use of large language models in scientific research has its roots in the early 1990s with IBM's statistical models pioneering word alignment techniques for machine translation.",
+    "Large language models can address challenges in traditional peer review systems, such as delays, inconsistencies, and systemic inequities.",
+    "Protein language models are powerful tools capable of decoding the complexities of proteins."
+  ],
+  "conflicts_identified": [],
+  "methodology": "",
+  "limitations": "",
+  "sources": [
+    {
+      "id": "2bd2447b",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "title": "Large language model - Wikipedia",
+      "content": "3 days ago - In the early 1990s, IBM's statistical models pioneered word alignment techniques for machine translation, laying the groundwork for corpus-based language modeling. In 2001, a smoothed n-gram model, such as those employing Kneser–Ney smoothing, trained on 300 million words, achieved state-of-the-art perplexity on benchmark tests. During the 2000s, with the rise of widespread internet access, researchers began compiling massive text datasets from the web (\"web as corpus\") to train statistical language models.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:10:51.530213",
+      "metadata": {}
+    },
+    {
+      "id": "09f08dd5",
+      "url": "https://www.nature.com/articles/s44387-025-00019-5",
+      "title": "Exploring the role of large language models in the scientific method: from hypothesis to discovery | npj Artificial Intelligence",
+      "content": "August 5, 2025 - Their applications range from simple tasks, such as acting as copilots to assist scientists, to complex tasks, such as autonomously performing experiments and proposing novel hypotheses.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:10:51.530361",
+      "metadata": {}
+    },
+    {
+      "id": "147e059c",
+      "url": "http://arxiv.org/abs/2406.10833v3",
+      "title": "A Comprehensive Survey of Scientific Large Language Models and Their Applications in Scientific Discovery",
+      "content": "In many scientific fields, large language models (LLMs) have revolutionized the way text and other modalities of data (e.g., molecules and proteins) are handled, achieving superior performance in various applications and augmenting the scientific discovery process. Nevertheless, previous surveys on scientific LLMs often concentrate on one or two fields or a single modality. In this paper, we aim to provide a more holistic view of the research landscape by unveiling cross-field and cross-modal connections between scientific LLMs regarding their architectures and pre-training techniques. To this end, we comprehensively survey over 260 scientific LLMs, discuss their commonalities and differences, as well as summarize pre-training datasets and evaluation tasks for each field and modality. Moreover, we investigate how LLMs have been deployed to benefit scientific discovery. Resources related to this survey are available at https://github.com/yuzhimanhua/Awesome-Scientific-Language-Models.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T07:10:56.898333",
+      "metadata": {
+        "authors": [
+          "Yu Zhang",
+          "Xiusi Chen",
+          "Bowen Jin",
+          "Sheng Wang",
+          "Shuiwang Ji"
+        ],
+        "published": "2024-06-16",
+        "categories": [
+          "cs.CL"
+        ]
+      }
+    },
+    {
+      "id": "12756b5a",
+      "url": "http://arxiv.org/abs/2011.14743v1",
+      "title": "IPPOG : Bridging the gap between science education at school and modern scientific research",
+      "content": "The International Particle Physics Outreach Group (IPPOG) has been making concerted and systematic efforts to present and popularise particle physics across all audiences and age groups since 1997. Today the scientific community has in IPPOG a strategic pillar in fostering long-term, sustainable support for fundamental research around the world. One of the main tools IPPOG has been offering to the scientific community, teachers and educators for almost 10 years is the Resource Database (RDB), an online platform containing a collection of high quality engaging education and outreach materials in particle physics and related sciences.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T07:10:56.898518",
+      "metadata": {
+        "authors": [
+          "Barbora Bruant Gulejova"
+        ],
+        "published": "2020-11-30",
+        "categories": [
+          "physics.ed-ph"
+        ]
+      }
+    },
+    {
+      "id": "197dc2e4",
+      "url": "https://royalsocietypublishing.org/rsos/article/12/4/241776/235656/Generalization-bias-in-large-language-model",
+      "title": "Generalization bias in large language model summarization of ...",
+      "content": "Apr 30, 2025 · Our results indicate a strong bias in many widely used LLMs towards overgeneralizing scientific conclusions, posing a significant risk of large-scale misinterpretations of research findings.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:12:01.889977",
+      "metadata": {}
+    },
+    {
+      "id": "80148bc1",
+      "url": "https://arxiv.org/abs/2504.00025",
+      "title": "Generalization Bias in Large Language Model Summarization of ...Source framing triggers systematic bias in large language models(PDF) Generalization Bias in Large Language Model ...Bias and Fairness in Large Language Models: A SurveyRobustness and authorship bias of large language models in ...Detecting implicit biases of large language models with ...",
+      "content": "Mar 28, 2025 · Notably, newer models tended to perform worse in generalization accuracy than earlier ones. Our results indicate a strong bias in many widely used LLMs towards overgeneralizing scientific conclusions, posing a significant risk of large-scale misinterpretations of research findings. Nov 7, 2025 · Large language models (LLMs) are increasingly used to evaluate text, raising urgent questions about whether their judgments are consistent, unbiased, and robust to framing effects. Here, we examine... Mar 28, 2025 · Our results indicate a strong bias in many widely used LLMs towards overgeneralizing scientific conclusions, posing a significant risk of large-scale misinterpretations of research findings. Sep 1, 2024 · We first consolidate, formalize, and expand notions of social bias and fairness in natural language processing, defining distinct facets of harm and introducing several desiderata to operationalize fairness for LLMs. 4 days ago · The use of large language models (LLMs) is increasingly explored in the field of automatic text scoring, particularly in tasks such as automatic essay scoring (AES) and abstract screening for systematic reviews. While prior research has focused on evaluating the accuracy of these models, their robustness and potential biases remain underexplored. Apr 11, 2025 · In this paper, we introduce a novel framework that reformulates bias detection in LLMs as a hypothesis testing problem, where the null hypothesis $$H_0$$ represents the absence of implicit...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:12:01.890015",
+      "metadata": {}
+    },
+    {
+      "id": "e5cd2e4d",
+      "url": "https://en.wikipedia.org/wiki/Language_model_benchmark",
+      "title": "Language model benchmark",
+      "content": "A language model benchmark is a standardized test designed to evaluate the performance of language models on various natural language processing tasks. These tests are intended for comparing different models' capabilities in areas such as language understanding, generation, and reasoning. \nBenchmarks generally consist of a dataset and corresponding evaluation metrics. The dataset provides text samples and annotations, while the metrics measure a model's performance on tasks like answering questions, text classification, and machine translation. These benchmarks are developed and maintained by academic institutions, research organizations, and industry players to track progress in the field. In addition to accuracy, the metrics can include throughput, energy efficiency, bias, trust, and sustainability.\n\n",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:12:07.742822",
+      "metadata": {
+        "categories": [
+          "All articles lacking reliable references",
+          "Articles lacking reliable references from August 2025",
+          "Articles with short description",
+          "Benchmarks (computing)",
+          "CS1 maint: work parameter with ISBN"
+        ]
+      }
+    },
+    {
+      "id": "4cb00763",
+      "url": "https://link.springer.com/article/10.1007/s11192-025-05440-w",
+      "title": "Large language models in peer review: challenges and ... - Springer",
+      "content": "The increasing volume of academic publications has placed considerable strain on traditional peer review systems, leading to delays, inconsistencies, and systemic inequities. The emergence and rapid development of large language models (LLMs) provide opportunities to address these challenges. In this review, we evaluate the potential roles, benefits, and limitations of LLMs in peer review ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:15:20.393220",
+      "metadata": {}
+    },
+    {
+      "id": "5d5b619f",
+      "url": "https://dl.acm.org/doi/10.1145/3677389.3702508",
+      "title": "The Impact of AI Language Models on Scientific Writing and Scientific ...",
+      "content": "Since peer review is a crucial part of scientific research, we also focus on exploring the consequent impact of emerging models on the peer-reviewing process. Existing studies show that AI language models are used significantly in scientific writing. However, this usage requires guidelines and control to overcome potential challenges and problems.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:15:20.393326",
+      "metadata": {}
+    },
+    {
+      "id": "804a002d",
+      "url": "https://en.wikipedia.org/wiki/Peer_review",
+      "title": "Peer review",
+      "content": "Peer review is the evaluation of work by one or more people with similar competencies as the producers of the work (peers). It functions as a form of self-regulation by qualified members of a profession within the relevant field. \nPeer review methods are used to maintain quality standards, improve performance, and provide credibility. In academia, scholarly peer review is typically used to determine an academic paper's suitability for publication. The reviewers are experts in the topic at hand and they have no connection to the author (they are not told the name of the author). They  are anonymous and cannot be pressured. Top journals reject over 90% of submitted papers. Peer review can be categorized by the type and by the field or profession in which the activity occurs, e.g., medical peer review. It can also be used as a teaching tool to help students improve writing assignments.\nHenry Oldenburg (1619–1677) was a German-born British philosopher who is seen as the 'father' of modern scientific peer review. It developed over the following centuries with, for example, the journal Nature making it standard practice in 1973. The term \"peer review\" was first used in the early 1970s. A monument to peer review has been at the Higher School of Economics in Moscow since 2017.\n\n",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:15:24.378951",
+      "metadata": {
+        "categories": [
+          "All articles with unsourced statements",
+          "Articles with excerpts",
+          "Articles with short description",
+          "Articles with unsourced statements from February 2025",
+          "Broad-concept articles"
+        ]
+      }
+    },
+    {
+      "id": "b7cfd300",
+      "url": "https://en.wikipedia.org/wiki/Scientific_literature",
+      "title": "Scientific literature",
+      "content": "Scientific literature encompasses a vast body of academic papers that spans various disciplines within the natural and social sciences. It primarily consists of academic papers that present original empirical research and theoretical contributions. These papers serve as essential sources of knowledge and are commonly referred to simply as \"the literature\" within specific research fields.\nThe process of academic publishing involves disseminating research findings to a wider audience. Researchers submit their work to reputable journals or conferences, where it undergoes rigorous evaluation by experts in the field. This evaluation, known as peer review, ensures the quality, validity, and reliability of the research before it becomes part of the scientific literature. Peer-reviewed publications contribute significantly to advancing our understanding of the world and shaping future research endeavors.\nOriginal scientific research first published in scientific journals constitutes primary literature. Patents and technical reports, which cover minor research results and engineering and design efforts, including computer software, are also classified as primary literature.\nSecondary sources comprise review articles that summarize the results of published studies to underscore progress and new research directions, as well as books that tackle extensive projects or comprehensive arguments, including article compilations.\nTertiary sources encompass encyclopedias and similar works design…",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:15:26.784942",
+      "metadata": {
+        "categories": [
+          "Academic literature",
+          "Academic works about science",
+          "All articles lacking in-text citations",
+          "All articles needing additional references",
+          "All articles with specifically marked weasel-worded phrases"
+        ]
+      }
+    },
+    {
+      "id": "0fb9bca0",
+      "url": "http://arxiv.org/abs/1011.6590v1",
+      "title": "Extending ArXiv.org to Achieve Open Peer Review and Publishing",
+      "content": "Today's peer review process for scientific articles is unnecessarily opaque and offers few incentives to referees. Likewise, the publishing process is unnecessarily inefficient and its results are only rarely made freely available to the public. Here we outline a comparatively simple extension of arXiv.org, an online preprint archive widely used in the mathematical and physical sciences, that addresses both of these problems. Under the proposal, editors invite referees to write public and signed reviews to be attached to the posted preprints, and then elevate selected articles to \"published\" status.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T07:15:40.644310",
+      "metadata": {
+        "authors": [
+          "Axel Boldt"
+        ],
+        "published": "2010-11-23",
+        "categories": [
+          "cs.OH"
+        ]
+      }
+    },
+    {
+      "id": "97c68d78",
+      "url": "https://arxiv.org/html/2504.05496v1",
+      "title": "A Survey on Hypothesis Generation for Scientific Discovery in the...",
+      "content": "Hypothesis generation is a fundamental step in scientific discovery, yet it is increasingly challenged by information overload and disciplinary fragmentation. Recent advances in Large Language Models (LLMs) have sparked growing interest in their potential to enhance and automate this...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:16:21.780074",
+      "metadata": {}
+    },
+    {
+      "id": "f4cbd603",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4948029",
+      "title": "Llm-Assisted Hypothesis Generation and Graph-Based... :: SSRN",
+      "content": "The emergence of Large Language Models (LLMs) opens up new possibilities for hypothesis generation in social science, traditionally a process driven by creativity and informal exploration.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:16:21.780126",
+      "metadata": {}
+    },
+    {
+      "id": "b2505018",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "title": "Retrieval-augmented generation",
+      "content": "Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. With RAG, LLMs first refer to a specified set of documents, then respond to user queries. These documents supplement information from the LLM's pre-existing training data. This allows LLMs to use domain-specific and/or updated information that is not available in the training data. For example, this helps LLM-based chatbots access internal company data or generate responses based on authoritative sources.\nRAG improves large language models (LLMs) by incorporating information retrieval before generating responses. Unlike LLMs that rely on static training data, RAG pulls relevant text from databases, uploaded documents, or web sources. According to Ars Technica, \"RAG is a way of improving LLM performance, in essence by blending the LLM process with a web search or other document look-up process to help LLMs stick to the facts.\" This method helps reduce AI hallucinations, which have caused chatbots to describe policies that don't exist, or recommend nonexistent legal cases to lawyers that are looking for citations to support their arguments.\nRAG also reduces the need to retrain LLMs with new data, saving on computational and financial costs. Beyond efficiency gains, RAG also allows LLMs to include sources in their responses, so users can verify the cited sources. This provides greater transparency, as users can cros…",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:16:26.385022",
+      "metadata": {
+        "categories": [
+          "All articles containing potentially dated statements",
+          "All articles with unsourced statements",
+          "Articles containing potentially dated statements from 2023",
+          "Articles with short description",
+          "Articles with unsourced statements from August 2025"
+        ]
+      }
+    },
+    {
+      "id": "4a82bece",
+      "url": "https://en.wikipedia.org/wiki/2026_in_science",
+      "title": "2026 in science",
+      "content": "The following scientific events occurred, or are scheduled to occur in 2026.\n\n",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:16:33.196097",
+      "metadata": {
+        "categories": [
+          "2020s in technology",
+          "2026-related lists",
+          "2026 in science",
+          "21st century in science",
+          "Articles with short description"
+        ]
+      }
+    },
+    {
+      "id": "d31e66a0",
+      "url": "http://arxiv.org/abs/2512.16152v1",
+      "title": "Pulsar Science with the SKA Observatory",
+      "content": "The large instantaneous sensitivity, a wide frequency coverage and flexible observation modes with large number of beams in the sky are the main features of the SKA observatory's two telescopes, the SKA-Low and the SKA-Mid, which are located on two different continents. Owing to these capabilities, the SKAO telescopes are going to be a game-changer for radio astronomy in general and pulsar astronomy in particular. The eleven articles in this special issue on pulsar science with the SKA Observatory describe its impact on different areas of pulsar science. In this lead article, a brief description of the two telescopes highlighting the relevant features for pulsar science is presented followed by an overview of each accompanying article, exploring the inter-relationship between different pulsar science use cases.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T07:16:36.772183",
+      "metadata": {
+        "authors": [
+          "Bhal Chandra Joshi",
+          "Aris Karastergiou",
+          "Marta Burgay",
+          "The SKA pulsar science working group"
+        ],
+        "published": "2025-12-18",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.IM"
+        ]
+      }
+    },
+    {
+      "id": "7d154a81",
+      "url": "https://arxiv.org/html/2508.08277v1",
+      "title": "Objective Metrics for Evaluating Large Language Models Using",
+      "content": "The evaluation of Large Language Models (LLMs) primarily involves automated metrics, benchmark dataset assessments, and human evaluations.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:21:42.489778",
+      "metadata": {}
+    },
+    {
+      "id": "e404dd81",
+      "url": "http://arxiv.org/abs/1610.00031v1",
+      "title": "Discriminating Similar Languages: Evaluations and Explorations",
+      "content": "We present an analysis of the performance of machine learning classifiers on discriminating between similar languages and language varieties. We carried out a number of experiments using the results of the two editions of the Discriminating between Similar Languages (DSL) shared task. We investigate the progress made between the two tasks, estimate an upper bound on possible performance using ensemble and oracle combination, and provide learning curves to help us understand which languages are more challenging. A number of difficult sentences are identified and investigated further with human annotation.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T07:21:53.507331",
+      "metadata": {
+        "authors": [
+          "Cyril Goutte",
+          "Serge Léger",
+          "Shervin Malmasi",
+          "Marcos Zampieri"
+        ],
+        "published": "2016-09-30",
+        "categories": [
+          "cs.CL"
+        ]
+      }
+    },
+    {
+      "id": "e2454f84",
+      "url": "https://bioengineer.org/democratizing-protein-language-models-training-sharing-collaborating/",
+      "title": "Democratizing Protein Language Models: Training, Sharing,",
+      "content": "Among these, the development and deployment of large-scale protein language models stand out as powerful tools capable of decoding the complexities ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:22:44.162970",
+      "metadata": {}
+    },
+    {
+      "id": "4d793a49",
+      "url": "https://labcritics.com/unlocking-the-potential-of-scientific-large-language-models-in-biology-and-chemistry/",
+      "title": "Unlocking the Potential of Scientific Large Language Models in",
+      "content": "The rapid advancements in large language models (LLMs) are transforming scientific research, particularly in the fields of biology and chemistry.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:22:44.163019",
+      "metadata": {}
+    },
+    {
+      "id": "d365bd4d",
+      "url": "https://www.emergentmind.com/topics/autonomous-llm-driven-scientific-research",
+      "title": "Autonomous LLM-Driven Scientific Research",
+      "content": "Explore LLM-driven autonomous scientific research that automates hypothesis formulation, experiment design, and self-assessment for accelerated discovery cycles.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:23:46.298648",
+      "metadata": {}
+    },
+    {
+      "id": "3e2128bf",
+      "url": "https://www.researchgate.net/publication/389748923_Mutation_Testing_via_Iterative_Large_Language_Model-Driven_Scientific_Debugging",
+      "title": "(PDF) Mutation Testing via Iterative Large Language Model-Driven...",
+      "content": "Model-Driven Scientiﬁc Debugging.This research explores the application of Large Language Models (LLMs) for automating unit test creation in game development, with a specific focus on strongly typed programming languages like C++ and C#, widely used in the industry.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:23:46.298707",
+      "metadata": {}
+    },
+    {
+      "id": "30bf6753",
+      "url": "https://en.wikipedia.org/wiki/Scientific_method",
+      "title": "Scientific method",
+      "content": "The scientific method is an empirical method for acquiring knowledge through careful observation, rigorous skepticism, hypothesis testing, and experimental validation. Developed from ancient and medieval practices, it acknowledges that cognitive assumptions can distort the interpretation of the observation. The scientific method has characterized science since at least the 17th century. Scientific inquiry includes creating a testable hypothesis through inductive reasoning, testing it through experiments and statistical analysis, and adjusting or discarding the hypothesis based on the results.\nAlthough procedures vary across fields, the underlying process is often similar. In more detail: the scientific method involves making conjectures (hypothetical explanations), predicting the logical consequences of hypothesis, then carrying out experiments or empirical observations based on those predictions. A hypothesis is a conjecture based on knowledge obtained while seeking answers to the question. Hypotheses can be very specific or broad but must be falsifiable, implying that it is possible to identify a possible outcome of an experiment or observation that conflicts with predictions deduced from the hypothesis; otherwise, the hypothesis cannot be meaningfully tested.\nWhile the scientific method is often presented as a fixed sequence of steps, it actually represents a set of general principles. Not all steps take place in every scientific inquiry (nor to the same degree), and they …",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:23:57.624929",
+      "metadata": {
+        "categories": [
+          "Articles containing Arabic-language text",
+          "Articles containing Latin-language text",
+          "Articles with Internet Encyclopedia of Philosophy links",
+          "Articles with short description",
+          "CS1 Italian-language sources (it)"
+        ]
+      }
+    },
+    {
+      "id": "0aa6927d",
+      "url": "https://arxiv.org/html/2601.20727",
+      "title": "Audit Trails for Accountability in Large Language Models",
+      "content": "January 28, 2026 - If human feedback is part of the adaptation workflow (for example demonstrations, preference rankings, or red-teaming annotations), the trail should record the provenance of that feedback process and the intermediate artifacts it produces, such as reward models, preference datasets, and the subsequent training runs that consume them (Ouyang et al., 2022). For configuration-driven adaptation, the same traceability requirement applies: prompts, retrieval indexes, tool schemas, and safety policies should be treated as versioned assets whose changes are attributable to actors and time.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:24:28.748234",
+      "metadata": {}
+    },
+    {
+      "id": "c4097802",
+      "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1653631/full",
+      "title": "Frontiers | A systematic review of ethical considerations of large language models in healthcare and medicine",
+      "content": "August 25, 2025 - Human Oversight: Clinician-in-the-loop review, informed-consent procedures, and participatory design workshops that embed end-user expertise and agency in model development and deployment (see Sections 5.1.4, 5.1.6). ... Transparency & Accountability: Explainability techniques (e.g., model-agnostic methods, code-based prompting), audit trails, and red-teaming to promote trust, facilitate external review, and assign responsibility (see Section 5.1.3).",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:24:28.748284",
+      "metadata": {}
+    },
+    {
+      "id": "e7803868",
+      "url": "http://arxiv.org/abs/2602.08403v1",
+      "title": "Intelligent support for Human Oversight: Integrating Reinforcement Learning with Gaze Simulation to Personalize Highlighting",
+      "content": "Interfaces for human oversight must effectively support users' situation awareness under time-critical conditions. We explore reinforcement learning (RL)-based UI adaptation to personalize alerting strategies that balance the benefits of highlighting critical events against the cognitive costs of interruptions. To enable learning without real-world deployment, we integrate models of users' gaze behavior to simulate attentional dynamics during monitoring. Using a delivery-drone oversight scenario, we present initial results suggesting that RL-based highlighting can outperform static, rule-based approaches and discuss challenges of intelligent oversight support.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T07:24:33.430472",
+      "metadata": {
+        "authors": [
+          "Thorsten Klößner",
+          "João Belo",
+          "Zekun Wu",
+          "Jörg Hoffmann",
+          "Anna Maria Feit"
+        ],
+        "published": "2026-02-09",
+        "categories": [
+          "cs.HC",
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "id": "bb4e6c64",
+      "url": "http://arxiv.org/abs/1509.04502v1",
+      "title": "Integration of Heterogeneous Modeling Languages via Extensible and Composable Language Components",
+      "content": "Effective model-driven engineering of complex systems requires to appropriately describe different specific system aspects. To this end, efficient integration of different heterogeneous modeling languages is essential. Modeling language integaration is onerous and requires in-depth conceptual and technical knowledge and ef- fort. Traditional modeling lanugage integration approches require language engineers to compose monolithic language aggregates for a specific task or project. Adapting these aggregates cannot be to different contexts requires vast effort and makes these hardly reusable. This contribution presents a method for the engineering of grammar-based language components that can be independently developed, are syntactically composable, and ultimately reusable. To this end, it introduces the concepts of language aggregation, language embed- ding, and language inheritance, as well as their realization in the language workbench MontiCore. The result is a generalizable, systematic, and efficient syntax-oriented composition of languages that allows the agile employment of modeling languages efficiently tailored for individual software projects.",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T07:24:33.430583",
+      "metadata": {
+        "authors": [
+          "Arne Haber",
+          "Markus Look",
+          "Antonio Navarro Perez",
+          "Bernhard Rumpe",
+          "Steven Völkel"
+        ],
+        "published": "2015-09-15",
+        "categories": [
+          "cs.SE"
+        ]
+      }
+    },
+    {
+      "id": "192558b3",
+      "url": "https://digitalhealthcentral.com/ethical-and-regulatory-challenges-of-large-language-models-in-medicine/",
+      "title": "Ethical and regulatory challenges of large language models in",
+      "content": "In ‘Ethical and regulatory challenges of large language models in medicine’ Viewpoint, a team led by Jasmine Ong of the Singapore University of ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:26:04.637105",
+      "metadata": {}
+    },
+    {
+      "id": "9be202fe",
+      "url": "https://www.llnl.gov/article/51616/evaluating-trust-safety-large-language-models",
+      "title": "Evaluating trust and safety of large language models | Lawrence",
+      "content": "In “TrustLLM: Trustworthiness in Large Language Models,” Kailkhura joined collaborators from universities and research organizations around the ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:26:04.637165",
+      "metadata": {}
+    },
+    {
+      "id": "2e57a6a1",
+      "url": "https://en.wikipedia.org/wiki/Open_source",
+      "title": "Open source",
+      "content": "Open source is software that is made freely available for possible modification and redistribution, also in form of source code. The licensing conditions include permission to use and view the source code, design documents, or content of the product. The open source model is a decentralized software development model that encourages open collaboration. A main principle of open source software development is peer production, with products such as source code, blueprints, and documentation freely available to the public. The open source movement in software began as a response to the limitations of proprietary code. The model is used for projects such as in open source eCommerce, open source appropriate technology, and open source drug discovery.\nOpen source promotes universal access via an open-source or free license to a product's design or blueprint, and universal redistribution of that design or blueprint. Before the phrase open source became widely adopted, developers and producers used a variety of other terms, such as free software, shareware, and public domain software. The term Open source was introduced in 1998 and gained hold with the rise of the Internet. The open-source software movement arose to clarify copyright, licensing, domain, and consumer issues.\nGenerally, open source refers to a computer program in which the source code is available to the general public for usage, modification from its original design, and publication of their version (fork) back to the …",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:26:16.084966",
+      "metadata": {
+        "categories": [
+          "Academic publishing",
+          "All articles with dead external links",
+          "All articles with failed verification",
+          "All articles with unsourced statements",
+          "Articles containing video clips"
+        ]
+      }
+    },
+    {
+      "id": "85fac341",
+      "url": "http://arxiv.org/abs/2401.15284v6",
+      "title": "Beyond principlism: Practical strategies for ethical AI use in research practices",
+      "content": "The rapid adoption of generative artificial intelligence (AI) in scientific research, particularly large language models (LLMs), has outpaced the development of ethical guidelines, leading to a \"Triple-Too\" problem: too many high-level ethical initiatives, too abstract principles lacking contextual and practical relevance, and too much focus on restrictions and risks over benefits and utilities. Existing approaches--principlism (reliance on abstract ethical principles), formalism (rigid application of rules), and technological solutionism (overemphasis on technological fixes)--offer little practical guidance for addressing ethical challenges of AI in scientific research practices. To bridge the gap between abstract principles and day-to-day research practices, a user-centered, realism-inspired approach is proposed here. It outlines five specific goals for ethical AI use: 1) understanding model training and output, including bias mitigation strategies; 2) respecting privacy, confidentiality, and copyright; 3) avoiding plagiarism and policy violations; 4) applying AI beneficially compared to alternatives; and 5) using AI transparently and reproducibly. Each goal is accompanied by actionable strategies and realistic cases of misuse and corrective measures. I argue that ethical AI application requires evaluating its utility against existing alternatives rather than isolated performance metrics. Additionally, I propose documentation guidelines to enhance transparency and reproduci…",
+      "source_type": "arxiv",
+      "credibility_score": 0.85,
+      "retrieved_at": "2026-05-01T07:26:21.357938",
+      "metadata": {
+        "authors": [
+          "Zhicheng Lin"
+        ],
+        "published": "2024-01-27",
+        "categories": [
+          "cs.CY",
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "id": "ba32409a",
+      "url": "https://www.nature.com/articles/s41586-024-07930-y",
+      "title": "Larger and more instructable language models become less reliable",
+      "content": "The prevailing methods to make large language models more powerful and amenable have been based on continuous scaling up (that is, increasing their size, data volume and computational resources 1 ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:28:48.435601",
+      "metadata": {}
+    },
+    {
+      "id": "fbad5a1e",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1438887124002693",
+      "title": "Evaluation of Large Language Model Performance and Reliability for ...",
+      "content": "In the ever-evolving landscape of scholarly research and academic discourse, the role of technology in aiding and enhancing the research process has grown exponentially. One of the most notable advancements in this regard is the emergence of large language models (LLMs) such as GPT-3.5, which have demonstrated impressive capabilities in generating written content across various domains ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:28:48.435717",
+      "metadata": {}
+    },
+    {
+      "id": "108580f2",
+      "url": "https://phys.org/news/2025-05-ai-language-economics.html",
+      "title": "AI language models increasingly shape economics research",
+      "content": "Citation : AI language models increasingly shape economics research writing, study finds (2025, May 19) retrieved 19 April 2026 from https://phys.org ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:29:47.386953",
+      "metadata": {}
+    },
+    {
+      "id": "b5ba9fd9",
+      "url": "https://scitechedit.com/using-ai-tools-for-science-writing/",
+      "title": "AI Tools for Science Writing: Why, How, When, and When Not To",
+      "content": "When selecting the appropriate large language model (LLM) for writing your research manuscript using AI tools, consider several factors to ensure the ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:29:47.386983",
+      "metadata": {}
+    },
+    {
+      "id": "a4b77bd8",
+      "url": "https://arxiv.org/html/2506.13023v1",
+      "title": "A Practical Guide for Evaluating LLMs and LLM-Reliant Systems",
+      "content": "We present a practical evaluation framework which outlines how to proactively curate representative datasets, select meaningful evaluation metrics, and employ meaningful evaluation methodologies that integrate well with practical development and deployment of LLM-reliant systems that must adhere to real-world requirements and meet user-facing ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:30:20.230464",
+      "metadata": {}
+    },
+    {
+      "id": "89e423af",
+      "url": "https://www.databricks.com/blog/best-practices-and-methods-llm-evaluation",
+      "title": "Best Practices and Methods for LLM Evaluation - Databricks",
+      "content": "Learn the fundamentals of large language model (LLM) evaluation, including key metrics and frameworks used to measure model performance, safety, and reliability. Explore practical evaluation techniques, such as automated tools, LLM judges, and human assessments tailored for domain-specific use cases. Understand the best practices for LLM evaluation, as well as some of the future directions ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:30:20.230526",
+      "metadata": {}
+    },
+    {
+      "id": "dfa14827",
+      "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+      "title": "Prompt engineering",
+      "content": "Prompt engineering is the process of structuring natural language inputs (known as prompts) to produce specified outputs from a generative artificial intelligence (GenAI) model. Context engineering is the related area of software engineering that focuses on the management of non-prompt contexts supplied to the GenAI model, such as metadata, API tools, and tokens.\nIt can also be defined as the practice of designing and refining input instructions given to a generative AI model to produce more accurate, relevant, or useful outputs. Effective prompt engineering involves understanding how a model interprets language, and may include techniques such as few-shot prompting, chain-of-thought prompting, and role assignment. It is increasingly considered a skill for working with large language models (LLMs) in both research and professional contexts. \nDuring the 2020s AI boom, prompt engineering became regarded as a business capability across corporations and industries. Employees with the title prompt engineer were hired to create prompts that would increase productivity and efficacy, although the individual title has since lost traction amid AI models that produce better prompts than humans and corporate training in prompting for general employees.  \nCommon prompting techniques include multi-shot, chain-of-thought, and tree-of-thought prompting, as well as the use of assigning roles to the model. Automated prompt generation methods, such as retrieval-augmented generation (RAG), provi…",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:30:29.415062",
+      "metadata": {
+        "categories": [
+          "2022 neologisms",
+          "Articles with short description",
+          "Deep learning",
+          "Generative AI",
+          "Linguistics"
+        ]
+      }
+    },
+    {
+      "id": "a27fec45",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11639098/",
+      "title": "Debiasing large language models: research opportunities* - PMC",
+      "content": "2.2.1. Data-related debiasing techniques This section briefly overviews data-related techniques listed in Table 2. CDA is a data processing method used to re-balance training or fine-tuning data by swapping bias attribute words. A pre-defined list of biased word pairs, such as he/she and white/black, is utilised, where the attribute is replaced. For example, in binary gender debiasing, ' [He ...",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:32:06.629385",
+      "metadata": {}
+    },
+    {
+      "id": "98384baf",
+      "url": "https://globals.ieice.org/en_transactions/information/10.1587/transinf.2024EDP7326/_f",
+      "title": "Debiasing Large Language Models with Structured Knowledge",
+      "content": "Concurrently, models with our method did not exhibit significant performance degradation in downstream tasks, affirming the preservation of their generalization ability. Furthermore, comparing to strong debiasing baselines, our method yielded superior scores and exhibited enhanced bias control.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:32:06.629434",
+      "metadata": {}
+    },
+    {
+      "id": "8e788623",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "title": "Generative AI",
+      "content": "Generative artificial intelligence, commonly known as generative AI or GenAI, is a subfield of artificial intelligence that uses generative models to generate text, images, videos, audio, software code (vibe coding) or other forms of data. These models learn the underlying patterns and structures of their training data, and use them to generate new data in response to input, which often takes the form of natural language prompts.\nThe prevalence of generative AI tools has increased significantly since the AI boom in the 2020s. This boom was made possible by improvements in deep neural networks, particularly large language models (LLMs), which are based on the transformer architecture. Generative AI applications include chatbots such as ChatGPT, Claude, Copilot, DeepSeek, Google Gemini and Grok; text-to-image models such as DALL-E, Firefly, Stable Diffusion, and Midjourney; and text-to-video models such as Veo, LTX and Sora.\nCompanies in a variety of sectors have used generative AI, including those in software development, healthcare, finance, entertainment, customer service, sales and marketing, art, writing, and product design.  \nGenerative AI has been used for cybercrime, and to deceive and manipulate people through fake news and deepfakes. Generative AI models have been trained on copyrighted works without the rightholders' permission. Many generative AI systems use large-scale data centers, whose environmental impacts include electronic waste, consumption of fresh water fo…",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:32:13.478520",
+      "metadata": {
+        "categories": [
+          "2020s fads and trends",
+          "2020s in computing",
+          "2023 in computing",
+          "2024 in computing",
+          "2025 in computing"
+        ]
+      }
+    },
+    {
+      "id": "a96d0c6a",
+      "url": "https://www.nature.com/articles/s42256-026-01188-x",
+      "title": "A large-scale randomized study of large language model feedback in peer review | Nature Machine Intelligence",
+      "content": "February 23, 2026 - Considerations and recommendations for use of GhatGPT and other large language models in scholarly peer review. Res. Integr. Peer Rev. 8, 4 (2023). Liang, W. et al. Monitoring AI-modified content at scale: a case study on the impact of ChatGPT on AI conference peer reviews.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:32:54.059706",
+      "metadata": {}
+    },
+    {
+      "id": "1ad61c8e",
+      "url": "https://research.aimultiple.com/large-language-model-evaluation/",
+      "title": "Large Language Model Evaluation in '26: 10+ Metrics & Methods",
+      "content": "The evaluation results are analyzed to compare the performance of different LLM models on each benchmark task. Models are ranked based on their overall performance or task-specific metrics. Comparative analysis allows researchers and practitioners to identify state-of-the-art models, track progress over time, and understand the relative strengths of different models for specific tasks.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:33:31.683132",
+      "metadata": {}
+    },
+    {
+      "id": "b716aaf4",
+      "url": "https://educationaldatamining.org/EDM2025/proceedings/2025.EDM.short-papers.6/index.html",
+      "title": "Objective Metrics for Evaluating Large Language Models Using External Data Sources",
+      "content": "Therefore, this study proposes a method that utilizes peer review data from an OODD graduate course as a benchmark to evaluate the review outcomes generated by different LLMs, aiming to explore the most suitable model for this task. Existing research has explored the capabilities of LLMs in automated grading and feedback generation. For example, D. Bhatnagar [3] investigated the performance of GPT-3 in providing feedback on programming assignments and found that it was effective in detecting errors and offering general suggestions but lacked a deep understanding of task-specific contexts.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:33:31.683178",
+      "metadata": {}
+    },
+    {
+      "id": "21320f84",
+      "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+      "title": "Generative pre-trained transformer",
+      "content": "A generative pre-trained transformer (GPT) is a type of large language model (LLM) that is widely used in generative artificial intelligence chatbots. GPTs are based on a deep learning architecture called the transformer. They are pre-trained on large datasets of unlabeled content, and able to generate novel content.\nOpenAI was the first to apply generative pre-training to the transformer architecture, introducing the GPT-1 model in 2018. The company has since released many bigger GPT models. The chatbot ChatGPT, released in late 2022 (using GPT-3.5), was followed by many competitor chatbots using their own generative pre-trained transformers to generate text, such as Gemini, DeepSeek and Claude.\nGPTs are primarily used to generate text, but can be trained to generate other kinds of data. For example, GPT-4o can process and generate text, images and audio. To improve performance on complex tasks, some GPTs, such as OpenAI o3, allocate more computation time analyzing the problem before generating an output, and are called reasoning models. In 2025, GPT-5 was released with a router that automatically selects whether to use a faster model or slower reasoning model based on the provided task.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:33:37.868507",
+      "metadata": {
+        "categories": [
+          "2018 in artificial intelligence",
+          "All Wikipedia articles written in American English",
+          "All articles with unsourced statements",
+          "Articles with short description",
+          "Articles with unsourced statements from January 2026"
+        ]
+      }
+    },
+    {
+      "id": "a7d27d94",
+      "url": "https://bdtechtalks.com/2022/05/16/opt-175b-large-language-models/",
+      "title": "Can large language models be democratized? - TechTalks",
+      "content": "Large language models have become one of the hottest areas of research in artificial intelligence in the past few years.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:34:07.389294",
+      "metadata": {}
+    },
+    {
+      "id": "8cc2a86d",
+      "url": "https://bdtechtalks.com/2022/08/01/cerebras-large-language-models/",
+      "title": "Democratizing the hardware side of large language models -",
+      "content": "To optimize the process of training large language models, researchers have to use all three types of parallel computing techniques at the same time.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:34:07.389339",
+      "metadata": {}
+    },
+    {
+      "id": "a3218352",
+      "url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+      "title": "List of large language models",
+      "content": "A large language model (LLM) is a type of machine learning model designed for natural language processing tasks such as language generation. LLMs are language models with many parameters, and are trained with self-supervised learning on a vast amount of text.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:34:10.794847",
+      "metadata": {
+        "categories": [
+          "All articles lacking reliable references",
+          "All articles needing additional references",
+          "All articles with unsourced statements",
+          "Articles lacking reliable references from March 2026",
+          "Articles needing additional references from February 2026"
+        ]
+      }
+    },
+    {
+      "id": "08b86f64",
+      "url": "https://en.wikipedia.org/wiki/Democratization",
+      "title": "Democratization",
+      "content": "Democratization, or democratisation, is the structural government transition from an authoritarian government to a more democratic political regime, including substantive political changes moving in a democratic direction. The opposite process of democratic transition is known as democratic backsliding or autocratization. Whether and to what extent democratization occurs can be influenced by various factors, including economic development, historical legacies, civil society, and international processes. Some accounts of democratization emphasize how elites drove democratization, whereas other accounts emphasize grassroots bottom-up processes. How democratization occurs has also been used to explain other political phenomena, such as whether a country goes to a war or whether its economy grows.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:34:13.354389",
+      "metadata": {
+        "categories": [
+          "All articles lacking reliable references",
+          "All articles with dead external links",
+          "Articles lacking reliable references from April 2018",
+          "Articles with dead external links from February 2026",
+          "Articles with excerpts"
+        ]
+      }
+    },
+    {
+      "id": "3eb961e0",
+      "url": "https://www.nature.com/articles/s42254-023-00581-4",
+      "title": "Science in the age of large language models - NatureA systematic review of large language model (LLM) evaluations ...Ethical and regulatory challenges of large language models in ...Large Language Models in Healthcare and Medical Applications ...Balancing Practical Uses and Ethical Concerns:The Role of ...[2512.15567] Evaluating Large Language Models in Scientific ...The application of large language models in medicine: A ...",
+      "content": "Apr 26, 2023 · Rapid advances in the capabilities of large language models and the broad accessibility of tools powered by this technology have led to both excitement and concern regarding their use in science. Mar 7, 2025 · This systematic review underscores the expanding role of LLMs in clinical medicine, highlighting their potential to revolutionize medical diagnostics, education, and patient care. Apr 23, 2024 · With the rapid growth of interest in and use of large language models (LLMs) across various industries, we are facing some crucial and profound ethical concerns, especially in the medical field. Drawing from recent research across medical informatics, artificial intelligence, and clinical practice, this paper aims to provide a holistic understanding of how LLMs are reshaping healthcare and what future developments may hold. Mar 12, 2025 · This study looks at how NASA's Science Mission Directorate (SMD) explored the use of LLMs, discussing whether to create a new model or adapt an existing one. The article shares the findings and lessons from this process, offering guidance for other research groups facing similar choices. Dec 17, 2025 · We introduce a scenario-grounded benchmark that evaluates LLMs across biology, chemistry, materials, and physics, where domain experts define research projects of genuine interest and decompose them into modular research scenarios from which vetted questions are sampled. May 17, 2024 · This research aims to fill this gap by providing a comprehensive systematic review of LLM applications in medicine. We focus on delineating the landscape, identifying challenges, and exploring future possibilities.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:34:39.019143",
+      "metadata": {}
+    },
+    {
+      "id": "ef8e14f6",
+      "url": "https://link.springer.com/article/10.1186/s12911-025-02954-4",
+      "title": "A systematic review of large language model (LLM) evaluations ...",
+      "content": "Mar 7, 2025 · This systematic review underscores the expanding role of LLMs in clinical medicine, highlighting their potential to revolutionize medical diagnostics, education, and patient care.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:34:39.019188",
+      "metadata": {}
+    },
+    {
+      "id": "608ca5c5",
+      "url": "https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence",
+      "title": "Ethics of artificial intelligence",
+      "content": "The ethics of artificial intelligence covers a broad range of topics within AI that are considered to have particular ethical stakes. This includes algorithmic biases, fairness, accountability, transparency, privacy, and regulation, particularly where systems influence or automate human decision-making. It also covers various emerging or potential future challenges such as machine ethics (how to make machines that behave ethically), lethal autonomous weapon systems, arms race dynamics, AI safety and alignment, technological unemployment, AI-enabled misinformation, how to treat certain AI systems if they have a moral status (AI welfare and rights), artificial superintelligence and existential risks.\nSome application areas may also have particularly important ethical implications, like healthcare, education, criminal justice, or the military.",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:34:45.237284",
+      "metadata": {
+        "categories": [
+          "All accuracy disputes",
+          "All articles with failed verification",
+          "All articles with unsourced statements",
+          "Articles with Russian-language sources (ru)",
+          "Articles with disputed statements from April 2024"
+        ]
+      }
+    },
+    {
+      "id": "634dacd6",
+      "url": "https://www.researchgate.net/publication/380932206_Human_Oversight_Mechanisms_over_Autonomous_Task_Execution_in_Sandbox_Environments",
+      "title": "(PDF) Human Oversight Mechanisms over Autonomous Task...",
+      "content": "to the broader discourse on human oversight mechanisms in AI-driven systems. This work underscores the importance of sandbox. environments in mitigating potential risks associated with deploying automated tasks in live environments, and highlights the role of.",
+      "source_type": "web",
+      "credibility_score": 0.6,
+      "retrieved_at": "2026-05-01T07:37:39.176570",
+      "metadata": {}
+    },
+    {
+      "id": "d00f9eff",
+      "url": "https://en.wikipedia.org/wiki/Human_behavior",
+      "title": "Human behavior",
+      "content": "Human behavior is the potential and expressed capacity (mentally, physically, and socially) of human individuals or groups to respond to internal and external stimuli throughout their life. Behavior is driven by environmental and genetic factors that affect an individual. Behavior is also driven, in part, by thoughts and feelings, which provide insight into individual psyche, revealing such things as attitudes and values. Human behavior is shaped by psychological traits, as personality types vary from person to person, producing different actions and behavior.\nHuman behavior encompasses a vast array of domains that span the entirety of human experience. Social behavior involves interactions between individuals and groups, while cultural behavior reflects the diverse patterns, values, and practices that vary across societies and historical periods. Moral behavior encompasses ethical decision-making and value-based conduct, contrasted with antisocial behavior that violates social norms and legal standards. Cognitive behavior involves mental processes of learning, memory, and decision-making, interconnected with psychological behavior that includes emotional regulation, mental health, and individual differences in personality and temperament.\nDevelopmental behavior changes across the human lifespan from infancy through aging, while organizational behavior governs conduct in workplace and institutional settings. Consumer behavior drives economic choices and market interactions, a…",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:37:42.760936",
+      "metadata": {
+        "categories": [
+          "All Wikipedia articles written in American English",
+          "Articles containing suspected AI-generated texts from November 2025",
+          "Articles with short description",
+          "Articles with sources from predatory publications",
+          "CS1: long volume value"
+        ]
+      }
+    },
+    {
+      "id": "c1e53cac",
+      "url": "https://en.wikipedia.org/wiki/Policy",
+      "title": "Policy",
+      "content": "Policy is a deliberate system of guidelines to guide decisions and achieve rational outcomes. A policy is a statement of intent and is implemented as a procedure or protocol. Policies are generally adopted by a governance body within an organization. Policies can assist in both subjective and objective decision making. Policies used in subjective decision-making usually assist senior management with decisions that must be based on the relative merits of a number of factors, and as a result, are often hard to test objectively, e.g. work–life balance policy. Moreover, governments and other institutions have policies in the form of laws, regulations, procedures, administrative actions, incentives and voluntary practices. Frequently, resource allocations mirror policy decisions.\nPolicies intended to assist in objective decision-making are usually operational in nature and can be objectively tested, e.g. a password policy.\nThe term may apply to government, public sector organizations and groups, businesses and individuals. Presidential executive orders, corporate privacy policies, and parliamentary rules of order are all examples of policy. Policy differs from rules or law. While the law can compel or prohibit behaviors (e.g. a law requiring the payment of taxes on income), policy merely guides actions toward those that are most likely to achieve the desired outcome.\nPolicy or policy study may also refer to the process of making important organizational decisions, including the id…",
+      "source_type": "wikipedia",
+      "credibility_score": 0.75,
+      "retrieved_at": "2026-05-01T07:37:45.408264",
+      "metadata": {
+        "categories": [
+          "All articles needing additional references",
+          "All articles with unsourced statements",
+          "Articles needing additional references from June 2023",
+          "Articles needing additional references from November 2021",
+          "Articles with imported Creative Commons Attribution 4.0 text"
+        ]
+      }
+    }
+  ],
+  "generated_at": "2026-05-01T07:40:03.957126",
+  "confidence_score": 0.0,
+  "total_sources": 56,
+  "research_iterations": 2
+}
