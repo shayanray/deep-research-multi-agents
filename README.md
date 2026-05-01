@@ -111,6 +111,9 @@ Reports are saved to `output/` as both:
 - `research_<topic>_<timestamp>.md` — Human-readable Markdown
 - `research_<topic>_<timestamp>.json` — Machine-readable structured data
 
+
+- outputs of 4 test cases saved to `output/` - each case has `.md` and `.json` files.
+
 ### Report Structure
 
 ```
@@ -203,4 +206,5 @@ graph.add_edge("fact_checker", "synthesizer")
 ```bash
 # .env
 OPENAI_API_KEY=sk-...   
+ANTHROPIC_API_KEY=...
 ```
